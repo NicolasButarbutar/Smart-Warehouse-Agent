@@ -1,0 +1,5 @@
+# Proyek ini hanya menggunakan pustaka standar Python (heapq, dataclasses, typing)
+# sehingga tidak ada dependensi wajib untuk menjalankan src/warehouse_search.py.
+#
+# Dependensi berikut opsional, untuk pengembangan/pengujian:
+pytest>=8.0.0
