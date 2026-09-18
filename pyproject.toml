@@ -10,7 +10,6 @@ authors = [
     { name = "Swasti Maristella Sihombing" },
 ]
 dependencies = []
-
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
