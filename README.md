@@ -2,10 +2,14 @@
 
 ### Agen Cerdas Berbasis Pencarian untuk Optimasi Penyimpanan & Pengambilan Barang di Gudang
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Dikelola dengan uv](https://img.shields.io/badge/dependency%20manager-uv-6C5CE7)](https://docs.astral.sh/uv/)
-[![Lisensi MIT](https://img.shields.io/badge/lisensi-MIT-green.svg)](LICENSE)
-[![Status Proyek](https://img.shields.io/badge/status-on%20progress-yellow)](#rencana-pengembangan-roadmap)
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Dikelola dengan uv](https://img.shields.io/badge/dependency%20manager-uv-6C5CE7?style=for-the-badge)](https://docs.astral.sh/uv/)
+[![Lisensi MIT](https://img.shields.io/badge/lisensi-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Status Proyek](https://img.shields.io/badge/status-on%20progress-yellow?style=for-the-badge)](#rencana-pengembangan-roadmap)
+
+</div>
 
 Smart Warehouse Agent adalah proyek AI mahasiswa yang dikembangkan bertahap selama satu semester untuk membantu pengelola gudang menemukan lokasi penyimpanan barang terbaik (*put-away*) dan jalur pengambilan barang tercepat (*retrieval*).
 
@@ -207,21 +211,21 @@ uv run python --version
 
 Misalkan Gudang Nusantara Logistik baru saja menerima kiriman barang dan perlu menetapkan slot penyimpanan sekaligus rute pengambilan yang paling efisien:
 
-1. barang tiba di dock penerimaan dan atributnya dicatat (dimensi, berat, kategori);
-2. sistem membentuk graf gudang berdasarkan denah lorong dan rak yang berlaku saat ini;
-3. algoritma UCS/A* mencari lintasan berbiaya (jarak/waktu) paling rendah dari dock menuju slot rak tujuan;
-4. sistem memberikan rekomendasi lokasi penyimpanan dan/atau rute pengambilan yang optimal; dan
-5. petugas atau AGV menjalankan instruksi actuator untuk menuntaskan proses put-away maupun picking.
+1. Barang tiba di dock penerimaan dan atributnya dicatat (dimensi, berat, kategori);
+2. Sistem membentuk graf gudang berdasarkan denah lorong dan rak yang berlaku saat ini;
+3. Algoritma UCS/A* mencari lintasan berbiaya (jarak/waktu) paling rendah dari dock menuju slot rak tujuan;
+4. Sistem memberikan rekomendasi lokasi penyimpanan dan/atau rute pengambilan yang optimal; dan
+5. Petugas atau AGV menjalankan instruksi actuator untuk menuntaskan proses put-away maupun picking.
 
 ## Rencana Lanjutan
 
 Beberapa arah pengembangan berikut masih terbuka untuk dipertimbangkan, menyesuaikan kebutuhan, ketersediaan data, serta hasil evaluasi proyek ke depannya:
 
-- menghadirkan model prediksi permintaan (demand forecasting) untuk slotting yang adaptif;
-- mengembangkan koordinasi multi-agent bagi beberapa AGV/petugas sekaligus;
-- menambahkan penalti kongesti yang dinamis pada fungsi biaya (cost function);
-- membangun dashboard visual untuk denah gudang dan status okupansi rak; dan
-- menguji algoritma pencarian pada graf gudang berskala jauh lebih besar dan kompleks.
+- Menghadirkan model prediksi permintaan (demand forecasting) untuk slotting yang adaptif;
+- Mengembangkan koordinasi multi-agent bagi beberapa AGV/petugas sekaligus;
+- Menambahkan penalti kongesti yang dinamis pada fungsi biaya (cost function);
+- Membangun dashboard visual untuk denah gudang dan status okupansi rak; dan
+- Menguji algoritma pencarian pada graf gudang berskala jauh lebih besar dan kompleks.
 
 Daftar di atas adalah kemungkinan arah pengembangan, bukan klaim bahwa fitur tersebut sudah tersedia atau bersifat final.
 
