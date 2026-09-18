@@ -147,6 +147,7 @@ smart-warehouse-agent/
 │   ├── raw/
 │   └── processed
 ├── tests/
+│   └── test_warehouse_search.py
 └── docs/
 ```
 
