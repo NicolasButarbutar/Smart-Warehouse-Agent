@@ -107,9 +107,9 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    U[Antarmuka Pengguna] --> B[Backend]
-    B --> DB[(Basis Data)]
-    B --> A[Modul Pencarian / AI]
+    U[User Interface] --> B[Backend]
+    B --> DB[(Database)]
+    B --> A[Search / AI Module]
     DB --> A
     A --> B
     B --> U
