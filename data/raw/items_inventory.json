@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "tanggal_update": "2026-10-01",
+    "gudang": "Gudang Nusantara Logistik — Cabang Medan",
+    "total_sku": 30,
+    "satuan_berat": "kg",
+    "satuan_dimensi": "cm"
+  },
+  "items": [
+    {
+      "sku": "SKU-E001", "nama": "Laptop Gaming 15.6\"",
+      "kategori": "Elektronik", "sub_kategori": "Komputer",
+      "berat_kg": 2.5, "panjang_cm": 38, "lebar_cm": 26, "tinggi_cm": 4,
+      "harga_satuan": 12500000, "turnover": "slow",
+      "lokasi_rak": "R01", "stok": 15, "stok_minimum": 3,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-E002", "nama": "Smartphone Android 5G",
+      "kategori": "Elektronik", "sub_kategori": "Handphone",
+      "berat_kg": 0.2, "panjang_cm": 16, "lebar_cm": 7.5, "tinggi_cm": 0.9,
+      "harga_satuan": 4500000, "turnover": "fast",
+      "lokasi_rak": "R09", "stok": 60, "stok_minimum": 10,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-E003", "nama": "Headphone Wireless ANC",
+      "kategori": "Elektronik", "sub_kategori": "Audio",
+      "berat_kg": 0.35, "panjang_cm": 20, "lebar_cm": 18, "tinggi_cm": 9,
+      "harga_satuan": 1200000, "turnover": "medium",
+      "lokasi_rak": "R01", "stok": 30, "stok_minimum": 5,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-E004", "nama": "Tablet 10 inch 256GB",
+      "kategori": "Elektronik", "sub_kategori": "Komputer",
+      "berat_kg": 0.55, "panjang_cm": 25, "lebar_cm": 17, "tinggi_cm": 0.7,
+      "harga_satuan": 3800000, "turnover": "medium",
+      "lokasi_rak": "R02", "stok": 20, "stok_minimum": 4,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-E005", "nama": "Smart TV 55 inch 4K",
+      "kategori": "Elektronik", "sub_kategori": "Televisi",
+      "berat_kg": 18.0, "panjang_cm": 124, "lebar_cm": 72, "tinggi_cm": 9,
+      "harga_satuan": 8900000, "turnover": "slow",
+      "lokasi_rak": "R11", "stok": 8, "stok_minimum": 2,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-P001", "nama": "Kemeja Batik Pria L",
+      "kategori": "Pakaian", "sub_kategori": "Atasan Pria",
+      "berat_kg": 0.3, "panjang_cm": 35, "lebar_cm": 25, "tinggi_cm": 3,
+      "harga_satuan": 185000, "turnover": "medium",
+      "lokasi_rak": "R03", "stok": 50, "stok_minimum": 10,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-P002", "nama": "Celana Jeans Wanita M",
+      "kategori": "Pakaian", "sub_kategori": "Bawahan Wanita",
+      "berat_kg": 0.45, "panjang_cm": 32, "lebar_cm": 28, "tinggi_cm": 4,
+      "harga_satuan": 220000, "turnover": "fast",
+      "lokasi_rak": "R09", "stok": 80, "stok_minimum": 15,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-P003", "nama": "Sepatu Sneakers Unisex 42",
+      "kategori": "Pakaian", "sub_kategori": "Alas Kaki",
+      "berat_kg": 0.7, "panjang_cm": 32, "lebar_cm": 20, "tinggi_cm": 14,
+      "harga_satuan": 350000, "turnover": "fast",
+      "lokasi_rak": "R10", "stok": 45, "stok_minimum": 8,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-P004", "nama": "Jaket Outdoor Waterproof L",
+      "kategori": "Pakaian", "sub_kategori": "Jaket",
+      "berat_kg": 0.9, "panjang_cm": 40, "lebar_cm": 30, "tinggi_cm": 5,
+      "harga_satuan": 480000, "turnover": "slow",
+      "lokasi_rak": "R04", "stok": 25, "stok_minimum": 5,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-M001", "nama": "Mie Instan Goreng (1 kardus isi 40)",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Makanan Instan",
+      "berat_kg": 4.0, "panjang_cm": 50, "lebar_cm": 35, "tinggi_cm": 25,
+      "harga_satuan": 95000, "turnover": "fast",
+      "lokasi_rak": "R05", "stok": 200, "stok_minimum": 50,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": "2027-06-30"
+    },
+    {
+      "sku": "SKU-M002", "nama": "Air Mineral 600ml (1 dus isi 24)",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Minuman",
+      "berat_kg": 15.0, "panjang_cm": 45, "lebar_cm": 30, "tinggi_cm": 30,
+      "harga_satuan": 40000, "turnover": "fast",
+      "lokasi_rak": "R05", "stok": 300, "stok_minimum": 80,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": "2028-01-15"
+    },
+    {
+      "sku": "SKU-M003", "nama": "Susu UHT Full Cream 1L (1 dus isi 12)",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Minuman",
+      "berat_kg": 12.5, "panjang_cm": 40, "lebar_cm": 28, "tinggi_cm": 22,
+      "harga_satuan": 120000, "turnover": "medium",
+      "lokasi_rak": "R15", "stok": 100, "stok_minimum": 20,
+      "membutuhkan_cold_storage": true, "fragile": false,
+      "tanggal_kadaluarsa": "2026-11-30"
+    },
+    {
+      "sku": "SKU-M004", "nama": "Yogurt Stroberi 150ml (1 pak isi 6)",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Dairy",
+      "berat_kg": 0.9, "panjang_cm": 20, "lebar_cm": 15, "tinggi_cm": 8,
+      "harga_satuan": 48000, "turnover": "fast",
+      "lokasi_rak": "R15", "stok": 80, "stok_minimum": 25,
+      "membutuhkan_cold_storage": true, "fragile": false,
+      "tanggal_kadaluarsa": "2026-10-20"
+    },
+    {
+      "sku": "SKU-M005", "nama": "Coklat Batangan Premium 100g",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Snack",
+      "berat_kg": 0.1, "panjang_cm": 16, "lebar_cm": 8, "tinggi_cm": 1.5,
+      "harga_satuan": 32000, "turnover": "medium",
+      "lokasi_rak": "R06", "stok": 150, "stok_minimum": 30,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": "2027-03-31"
+    },
+    {
+      "sku": "SKU-R001", "nama": "Blender Rumah Tangga 600W",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Peralatan Dapur",
+      "berat_kg": 2.2, "panjang_cm": 22, "lebar_cm": 22, "tinggi_cm": 38,
+      "harga_satuan": 350000, "turnover": "slow",
+      "lokasi_rak": "R07", "stok": 20, "stok_minimum": 4,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-R002", "nama": "Panci Set Stainless 5-in-1",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Peralatan Dapur",
+      "berat_kg": 5.5, "panjang_cm": 35, "lebar_cm": 35, "tinggi_cm": 40,
+      "harga_satuan": 275000, "turnover": "slow",
+      "lokasi_rak": "R07", "stok": 15, "stok_minimum": 3,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-R003", "nama": "Sabun Mandi Batang (1 lusin)",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Kebersihan",
+      "berat_kg": 1.0, "panjang_cm": 28, "lebar_cm": 12, "tinggi_cm": 8,
+      "harga_satuan": 36000, "turnover": "fast",
+      "lokasi_rak": "R10", "stok": 120, "stok_minimum": 30,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": "2028-12-31"
+    },
+    {
+      "sku": "SKU-R004", "nama": "Deterjen Bubuk 2kg",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Kebersihan",
+      "berat_kg": 2.1, "panjang_cm": 28, "lebar_cm": 10, "tinggi_cm": 38,
+      "harga_satuan": 52000, "turnover": "fast",
+      "lokasi_rak": "R09", "stok": 90, "stok_minimum": 20,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-R005", "nama": "Vas Bunga Keramik Besar",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Dekorasi",
+      "berat_kg": 1.8, "panjang_cm": 20, "lebar_cm": 20, "tinggi_cm": 35,
+      "harga_satuan": 125000, "turnover": "slow",
+      "lokasi_rak": "R13", "stok": 18, "stok_minimum": 3,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-F001", "nama": "Kulkas 2 Pintu 200L",
+      "kategori": "Elektronik", "sub_kategori": "Appliances",
+      "berat_kg": 48.0, "panjang_cm": 55, "lebar_cm": 57, "tinggi_cm": 145,
+      "harga_satuan": 4200000, "turnover": "slow",
+      "lokasi_rak": "R12", "stok": 5, "stok_minimum": 1,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-F002", "nama": "Mesin Cuci Front Loading 7kg",
+      "kategori": "Elektronik", "sub_kategori": "Appliances",
+      "berat_kg": 62.0, "panjang_cm": 60, "lebar_cm": 55, "tinggi_cm": 85,
+      "harga_satuan": 5800000, "turnover": "slow",
+      "lokasi_rak": "R12", "stok": 4, "stok_minimum": 1,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-G001", "nama": "Cermin Dinding 60x90cm",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Dekorasi",
+      "berat_kg": 3.5, "panjang_cm": 92, "lebar_cm": 62, "tinggi_cm": 5,
+      "harga_satuan": 195000, "turnover": "slow",
+      "lokasi_rak": "R13", "stok": 12, "stok_minimum": 2,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-G002", "nama": "Gelas Kristal Set isi 6",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Peralatan Makan",
+      "berat_kg": 1.2, "panjang_cm": 22, "lebar_cm": 18, "tinggi_cm": 15,
+      "harga_satuan": 145000, "turnover": "medium",
+      "lokasi_rak": "R14", "stok": 28, "stok_minimum": 5,
+      "membutuhkan_cold_storage": false, "fragile": true,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-C001", "nama": "Daging Sapi Beku 500g",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Daging Segar",
+      "berat_kg": 0.52, "panjang_cm": 22, "lebar_cm": 15, "tinggi_cm": 4,
+      "harga_satuan": 75000, "turnover": "fast",
+      "lokasi_rak": "R16", "stok": 60, "stok_minimum": 15,
+      "membutuhkan_cold_storage": true, "fragile": false,
+      "tanggal_kadaluarsa": "2026-10-31"
+    },
+    {
+      "sku": "SKU-C002", "nama": "Ayam Potong Beku 1kg",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Daging Segar",
+      "berat_kg": 1.05, "panjang_cm": 24, "lebar_cm": 18, "tinggi_cm": 6,
+      "harga_satuan": 42000, "turnover": "fast",
+      "lokasi_rak": "R16", "stok": 90, "stok_minimum": 25,
+      "membutuhkan_cold_storage": true, "fragile": false,
+      "tanggal_kadaluarsa": "2026-10-15"
+    },
+    {
+      "sku": "SKU-C003", "nama": "Es Krim Vanilla 750ml",
+      "kategori": "Makanan & Minuman", "sub_kategori": "Frozen Dessert",
+      "berat_kg": 0.8, "panjang_cm": 14, "lebar_cm": 14, "tinggi_cm": 18,
+      "harga_satuan": 55000, "turnover": "medium",
+      "lokasi_rak": "R15", "stok": 40, "stok_minimum": 10,
+      "membutuhkan_cold_storage": true, "fragile": false,
+      "tanggal_kadaluarsa": "2027-02-28"
+    },
+    {
+      "sku": "SKU-O001", "nama": "Rak Besi Serbaguna 5 Susun",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Furnitur",
+      "berat_kg": 14.0, "panjang_cm": 90, "lebar_cm": 40, "tinggi_cm": 180,
+      "harga_satuan": 320000, "turnover": "slow",
+      "lokasi_rak": "R11", "stok": 10, "stok_minimum": 2,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-O002", "nama": "Kasur Busa 160x200cm (tebal 20cm)",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Furnitur",
+      "berat_kg": 22.0, "panjang_cm": 200, "lebar_cm": 160, "tinggi_cm": 20,
+      "harga_satuan": 850000, "turnover": "slow",
+      "lokasi_rak": "R12", "stok": 6, "stok_minimum": 1,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-O003", "nama": "Meja Kerja Lipat Portable",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Furnitur",
+      "berat_kg": 7.5, "panjang_cm": 100, "lebar_cm": 50, "tinggi_cm": 10,
+      "harga_satuan": 420000, "turnover": "medium",
+      "lokasi_rak": "R11", "stok": 14, "stok_minimum": 3,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    },
+    {
+      "sku": "SKU-O004", "nama": "Karpet Bulu 150x200cm",
+      "kategori": "Perlengkapan RT", "sub_kategori": "Dekorasi",
+      "berat_kg": 5.0, "panjang_cm": 200, "lebar_cm": 150, "tinggi_cm": 8,
+      "harga_satuan": 380000, "turnover": "slow",
+      "lokasi_rak": "R08", "stok": 10, "stok_minimum": 2,
+      "membutuhkan_cold_storage": false, "fragile": false,
+      "tanggal_kadaluarsa": null
+    }
+  ]
+}

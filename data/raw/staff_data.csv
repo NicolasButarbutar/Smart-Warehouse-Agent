@@ -1,0 +1,16 @@
+﻿id_staf,nama,jabatan,departemen,tanggal_bergabung,status,hari_libur_senin,hari_libur_selasa,hari_libur_rabu,hari_libur_kamis,hari_libur_jumat,hari_libur_sabtu,hari_libur_minggu,preferensi_shift,max_jam_per_minggu,catatan
+S01,Andi Kurniawan,Operator Gudang Senior,Operasional,2021-03-15,Aktif,0,0,0,0,0,0,0,"Pagi, Siang",40,
+S02,Budi Santoso,Operator Gudang,Operasional,2022-07-01,Aktif,1,1,0,0,0,0,0,"Siang, Malam",40,Libur Senin & Selasa
+S03,Citra Dewi Nainggolan,Operator Gudang,Operasional,2023-01-10,Aktif,0,0,0,0,1,0,0,Pagi,40,Tidak tersedia Jumat
+S04,Dewi Rahayu Sihotang,Supervisor Gudang,Operasional,2020-09-20,Aktif,0,0,0,0,0,0,0,"Pagi, Siang",40,Diutamakan shift pagi
+S05,Eko Prasetyo,Operator Gudang,Operasional,2022-11-05,Aktif,0,0,0,0,0,0,0,"Malam, Siang",40,Bersedia shift malam
+S06,Fitri Ayu Simbolon,Operator Gudang,Operasional,2023-06-15,Aktif,0,0,0,0,0,1,1,"Pagi, Siang",40,Tidak tersedia akhir pekan
+S07,Galih Wibowo Tambunan,Operator Forklift,Operasional,2021-08-30,Aktif,0,0,1,0,0,0,0,"Pagi, Malam",40,Libur Rabu (pelatihan rutin)
+S08,Hesti Permata Sinaga,Operator Gudang,Operasional,2024-02-20,Aktif,0,0,0,1,0,0,0,Siang,40,"Baru bergabung, libur Kamis"
+S09,Ivan Saputra Manurung,Operator Gudang,Operasional,2023-09-01,Aktif,0,0,0,0,0,0,0,"Pagi, Siang",40,
+S10,Jeni Lestari Hutabarat,Admin Gudang,Administrasi,2022-04-12,Aktif,0,0,0,0,0,1,1,Pagi,40,Hanya shift pagi & hari kerja
+S11,Kurniadi Simbolon,Operator Gudang,Operasional,2021-12-01,Aktif,1,0,0,0,0,0,0,"Siang, Malam",40,Libur Senin
+S12,Linda Sari Nababan,QC Inspector,Kualitas,2022-08-20,Aktif,0,0,0,0,0,1,1,"Pagi, Siang",40,Hanya weekday
+S13,Muhammad Rizki,Operator Forklift,Operasional,2020-05-10,Aktif,0,0,0,0,0,0,0,"Pagi, Malam",48,Bersedia lembur s/d 48 jam
+S14,Nadia Puspita Sari,Operator Gudang,Operasional,2024-06-01,Aktif,0,0,0,0,0,0,0,Siang,40,Baru bergabung
+S15,Oscar Tambunan,Kepala Gudang,Manajemen,2019-01-15,Aktif,0,0,0,0,0,0,0,Pagi,40,Hanya shift pagi

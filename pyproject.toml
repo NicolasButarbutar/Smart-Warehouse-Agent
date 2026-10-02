@@ -1,7 +1,7 @@
 [project]
 name = "smart-warehouse-agent"
-version = "0.1.0"
-description = "Smart Warehouse Management Agent untuk Optimasi Penyimpanan Barang - Milestone 1 (Problem Framing, PEAS, Baseline Search)"
+version = "0.2.0"
+description = "Smart Warehouse Management Agent - Milestone 2: Constraint Solver CSP (AC-3 + Backtracking MRV) untuk Penjadwalan Shift Staf & Optimasi Sumber Daya Gudang"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -9,7 +9,9 @@ authors = [
     { name = "Indah Triyuni Siahaan" },
     { name = "Swasti Maristella Sihombing" },
 ]
-dependencies = []
+dependencies = [
+    "openpyxl>=3.1.5",
+]
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
@@ -21,3 +23,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

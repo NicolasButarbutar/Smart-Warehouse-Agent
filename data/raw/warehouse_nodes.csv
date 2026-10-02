@@ -1,0 +1,28 @@
+﻿id_node,label,tipe,koordinat_x,koordinat_y,kapasitas_slot,terisi_slot,keterangan
+DOCK_IN,Pintu Penerimaan Barang,dock,0,0,-,-,Entry point barang masuk
+DOCK_OUT,Pintu Pengiriman Barang,dock,0,10,-,-,Exit point barang keluar
+STAGING,Area Staging / QC,staging,1,0,-,-,Pemeriksaan kualitas barang
+J1,Persimpangan Lorong 1A,junction,2,0,-,-,
+J2,Persimpangan Lorong 1B,junction,2,3,-,-,
+J3,Persimpangan Lorong 2A,junction,4,0,-,-,
+J4,Persimpangan Lorong 2B,junction,4,3,-,-,
+J5,Persimpangan Lorong 3A,junction,6,0,-,-,
+J6,Persimpangan Lorong 3B,junction,6,3,-,-,
+J7,Persimpangan Lorong 4A,junction,8,0,-,-,
+J8,Persimpangan Lorong 4B,junction,8,3,-,-,
+R01,Rak A1 — Elektronik,rack,3,1,50,45,"SKU-E001, SKU-E003"
+R02,Rak A2 — Elektronik,rack,3,2,50,20,SKU-E004
+R03,Rak B1 — Pakaian,rack,5,1,60,50,SKU-P001
+R04,Rak B2 — Pakaian,rack,5,2,60,25,SKU-P004
+R05,Rak C1 — Makanan & Minuman,rack,7,1,80,75,"SKU-M001, SKU-M002"
+R06,Rak C2 — Makanan & Minuman,rack,7,2,80,60,"SKU-M005, SKU-M006"
+R07,Rak D1 — Perlengkapan RT,rack,9,1,40,35,"SKU-R001, SKU-R002"
+R08,Rak D2 — Perlengkapan RT,rack,9,2,40,10,SKU-O004
+R09,Rak E1 — Fast-Moving,rack,3,4,100,85,"SKU-E002, SKU-P002, SKU-P005, SKU-R004"
+R10,Rak E2 — Fast-Moving,rack,3,5,100,70,"SKU-P003, SKU-R003"
+R11,Rak F1 — Oversize,rack,5,4,20,14,"SKU-E005, SKU-O001, SKU-O003"
+R12,Rak F2 — Oversize,rack,5,5,20,15,"SKU-E006, SKU-E007, SKU-O002"
+R13,Rak G1 — Fragile,rack,7,4,30,18,"SKU-R005, SKU-G001"
+R14,Rak G2 — Fragile,rack,7,5,30,28,SKU-G002
+R15,Rak H1 — Cold Storage,rack_cold,9,4,40,38,"SKU-M003, SKU-M004, SKU-C003"
+R16,Rak H2 — Cold Storage,rack_cold,9,5,40,35,"SKU-C001, SKU-C002"

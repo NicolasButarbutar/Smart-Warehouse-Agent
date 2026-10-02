@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "periode": "Minggu 1 Oktober 2026",
+    "aturan_regulasi": {
+      "maks_jam_kerja_per_minggu": 40,
+      "min_istirahat_antar_shift_jam": 8,
+      "shift": {
+        "M": { "label": "Pagi",  "jam_mulai": "06:00", "jam_selesai": "14:00", "durasi_jam": 8 },
+        "A": { "label": "Siang", "jam_mulai": "14:00", "jam_selesai": "22:00", "durasi_jam": 8 },
+        "N": { "label": "Malam", "jam_mulai": "22:00", "jam_selesai": "06:00", "durasi_jam": 8 }
+      }
+    }
+  },
+  "staf": [
+    {
+      "id": "S01",
+      "nama": "Andi Kurniawan",
+      "jabatan": "Operator Gudang Senior",
+      "departemen": "Operasional",
+      "email": "andi.kurniawan@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2021-03-15",
+      "status": "aktif",
+      "hari_tidak_tersedia": [],
+      "preferensi_shift": ["M", "A"],
+      "catatan": ""
+    },
+    {
+      "id": "S02",
+      "nama": "Budi Santoso",
+      "jabatan": "Operator Gudang",
+      "departemen": "Operasional",
+      "email": "budi.santoso@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2022-07-01",
+      "status": "aktif",
+      "hari_tidak_tersedia": [0, 1],
+      "preferensi_shift": ["A", "N"],
+      "catatan": "Libur Senin & Selasa karena urusan keluarga"
+    },
+    {
+      "id": "S03",
+      "nama": "Citra Dewi Nainggolan",
+      "jabatan": "Operator Gudang",
+      "departemen": "Operasional",
+      "email": "citra.dewi@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2023-01-10",
+      "status": "aktif",
+      "hari_tidak_tersedia": [4],
+      "preferensi_shift": ["M"],
+      "catatan": "Tidak tersedia hari Jumat"
+    },
+    {
+      "id": "S04",
+      "nama": "Dewi Rahayu Sihotang",
+      "jabatan": "Supervisor Gudang",
+      "departemen": "Operasional",
+      "email": "dewi.rahayu@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2020-09-20",
+      "status": "aktif",
+      "hari_tidak_tersedia": [],
+      "preferensi_shift": ["M", "A"],
+      "catatan": "Supervisor — diutamakan shift pagi"
+    },
+    {
+      "id": "S05",
+      "nama": "Eko Prasetyo",
+      "jabatan": "Operator Gudang",
+      "departemen": "Operasional",
+      "email": "eko.prasetyo@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2022-11-05",
+      "status": "aktif",
+      "hari_tidak_tersedia": [],
+      "preferensi_shift": ["N", "A"],
+      "catatan": "Bersedia shift malam"
+    },
+    {
+      "id": "S06",
+      "nama": "Fitri Ayu Simbolon",
+      "jabatan": "Operator Gudang",
+      "departemen": "Operasional",
+      "email": "fitri.ayu@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2023-06-15",
+      "status": "aktif",
+      "hari_tidak_tersedia": [5, 6],
+      "preferensi_shift": ["M", "A"],
+      "catatan": "Tidak tersedia akhir pekan"
+    },
+    {
+      "id": "S07",
+      "nama": "Galih Wibowo Tambunan",
+      "jabatan": "Operator Forklift",
+      "departemen": "Operasional",
+      "email": "galih.wibowo@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2021-08-30",
+      "status": "aktif",
+      "hari_tidak_tersedia": [2],
+      "preferensi_shift": ["M", "N"],
+      "catatan": "Libur Rabu untuk pelatihan rutin"
+    },
+    {
+      "id": "S08",
+      "nama": "Hesti Permata Sinaga",
+      "jabatan": "Operator Gudang",
+      "departemen": "Operasional",
+      "email": "hesti.permata@nusantaralogistik.co.id",
+      "tanggal_bergabung": "2024-02-20",
+      "status": "aktif",
+      "hari_tidak_tersedia": [3],
+      "preferensi_shift": ["A"],
+      "catatan": "Baru bergabung, libur Kamis"
+    }
+  ],
+  "konfigurasi_penjadwalan": {
+    "periode_hari": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"],
+    "n_hari": 5,
+    "n_slot_per_shift": 2,
+    "shift_aktif": ["M", "A", "N"],
+    "maks_jam_per_minggu": 40
+  }
+}

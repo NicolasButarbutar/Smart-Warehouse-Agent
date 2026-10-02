@@ -1,0 +1,23 @@
+﻿id_pesanan,tipe,tanggal,waktu,sku,nama_barang,jumlah,node_asal,node_tujuan,biaya_rute_m,status,catatan
+ORD-20261001-001,MASUK,2026-10-01,08:15,SKU-M001,Mie Instan Goreng (kardus 40pcs),20,DOCK_IN,R05,20.5,selesai,Pengiriman reguler dari supplier
+ORD-20261001-002,KELUAR,2026-10-01,09:30,SKU-E002,Smartphone Android 5G,5,R09,DOCK_OUT,24.0,selesai,Pesanan online ekspres
+ORD-20261001-003,KELUAR,2026-10-01,10:00,SKU-P002,Celana Jeans Wanita M,10,R09,DOCK_OUT,24.0,selesai,Pesanan grosir toko mitra
+ORD-20261001-004,MASUK,2026-10-01,13:45,SKU-C001,Daging Sapi Beku 500g,30,DOCK_IN,R16,27.5,selesai,Cold chain — prioritas tinggi
+ORD-20261002-001,KELUAR,2026-10-02,07:50,SKU-M002,Air Mineral 600ml (dus 24pcs),50,R05,DOCK_OUT,12.5,selesai,Restok minimarket mitra
+ORD-20261002-002,MASUK,2026-10-02,09:20,SKU-E005,Smart TV 55 inch 4K,3,DOCK_IN,R11,19.5,selesai,Oversize — butuh forklift
+ORD-20261002-003,KELUAR,2026-10-02,11:00,SKU-E001,"Laptop Gaming 15.6""",2,R01,DOCK_OUT,15.0,selesai,Pesanan korporat
+ORD-20261002-004,KELUAR,2026-10-02,14:30,SKU-M004,Yogurt Stroberi 150ml (pak 6pcs),20,R15,DOCK_OUT,10.5,selesai,Hampir kadaluarsa — prioritas keluar
+ORD-20261003-001,MASUK,2026-10-03,08:00,SKU-P003,Sepatu Sneakers Unisex 42,15,DOCK_IN,R10,14.0,selesai,Supplier baru — cek kualitas di staging
+ORD-20261003-002,KELUAR,2026-10-03,10:15,SKU-R003,Sabun Mandi Batang (1 lusin),30,R10,DOCK_OUT,26.5,selesai,Pesanan grosir toko kelontong
+ORD-20261003-003,MASUK,2026-10-03,13:00,SKU-G001,Cermin Dinding 60x90cm,5,DOCK_IN,R13,23.5,proses,Fragile — penanganan hati-hati
+ORD-20261004-001,KELUAR,2026-10-04,09:00,SKU-C002,Ayam Potong Beku 1kg,40,R16,DOCK_OUT,10.5,selesai,Pengiriman harian ke restoran mitra
+ORD-20261004-002,MASUK,2026-10-04,10:30,SKU-R004,Deterjen Bubuk 2kg,25,DOCK_IN,R09,13.5,selesai,Restok rutin
+ORD-20261004-003,KELUAR,2026-10-04,15:45,SKU-E003,Headphone Wireless ANC,8,R01,DOCK_OUT,15.0,selesai,Pesanan e-commerce
+ORD-20261005-001,MASUK,2026-10-05,08:30,SKU-M003,Susu UHT Full Cream 1L (dus 12),40,DOCK_IN,R15,28.0,selesai,Cold chain — langsung ke cold storage
+ORD-20261005-002,KELUAR,2026-10-05,10:00,SKU-P001,Kemeja Batik Pria L,12,R03,DOCK_OUT,11.0,selesai,Pesanan event perusahaan
+ORD-20261005-003,KELUAR,2026-10-05,14:00,SKU-O001,Rak Besi Serbaguna 5 Susun,4,R11,DOCK_OUT,20.5,selesai,Oversize — sewa truk besar
+ORD-20261006-001,MASUK,2026-10-06,09:00,SKU-E004,Tablet 10 inch 256GB,10,DOCK_IN,R02,18.0,menunggu,Belum dijadwalkan tim operasional
+ORD-20261006-002,KELUAR,2026-10-06,11:30,SKU-M005,Coklat Batangan Premium 100g,50,R06,DOCK_OUT,14.5,menunggu,Pesanan hamper Lebaran awal
+ORD-20261007-001,MASUK,2026-10-07,10:00,SKU-E006,Kulkas 2 Pintu 200L,2,DOCK_IN,R12,20.0,menunggu,Oversize — perlu forklift & 2 operator
+ORD-20261007-002,KELUAR,2026-10-07,13:00,SKU-P005,Kaos Polos Cotton Pria XL,25,R09,DOCK_OUT,24.0,menunggu,Pesanan regular e-commerce
+ORD-20261007-003,MASUK,2026-10-07,14:30,SKU-M006,Kopi Sachet (dos 100pcs),15,DOCK_IN,R06,20.5,menunggu,Restok mingguan

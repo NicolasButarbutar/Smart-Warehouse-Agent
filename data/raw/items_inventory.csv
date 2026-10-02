@@ -1,0 +1,33 @@
+﻿sku,nama_barang,kategori,sub_kategori,berat_kg,panjang_cm,lebar_cm,tinggi_cm,harga_satuan_rp,turnover,lokasi_rak,stok_saat_ini,stok_minimum,cold_storage,fragile,tanggal_kadaluarsa
+SKU-E001,"Laptop Gaming 15.6""",Elektronik,Komputer,2.5,38,26,4,12500000,lambat,R01,15,3,Tidak,Ya,
+SKU-E002,Smartphone Android 5G,Elektronik,Handphone,0.2,16,8,1,4500000,cepat,R09,60,10,Tidak,Ya,
+SKU-E003,Headphone Wireless ANC,Elektronik,Audio,0.35,20,18,9,1200000,sedang,R01,30,5,Tidak,Tidak,
+SKU-E004,Tablet 10 inch 256GB,Elektronik,Komputer,0.55,25,17,1,3800000,sedang,R02,20,4,Tidak,Ya,
+SKU-E005,Smart TV 55 inch 4K,Elektronik,Televisi,18.0,124,72,9,8900000,lambat,R11,8,2,Tidak,Ya,
+SKU-E006,Kulkas 2 Pintu 200L,Elektronik,Appliances,48.0,55,57,145,4200000,lambat,R12,5,1,Tidak,Tidak,
+SKU-E007,Mesin Cuci Front Loading 7kg,Elektronik,Appliances,62.0,60,55,85,5800000,lambat,R12,4,1,Tidak,Tidak,
+SKU-P001,Kemeja Batik Pria L,Pakaian,Atasan Pria,0.3,35,25,3,185000,sedang,R03,50,10,Tidak,Tidak,
+SKU-P002,Celana Jeans Wanita M,Pakaian,Bawahan Wanita,0.45,32,28,4,220000,cepat,R09,80,15,Tidak,Tidak,
+SKU-P003,Sepatu Sneakers Unisex 42,Pakaian,Alas Kaki,0.7,32,20,14,350000,cepat,R10,45,8,Tidak,Tidak,
+SKU-P004,Jaket Outdoor Waterproof L,Pakaian,Jaket,0.9,40,30,5,480000,lambat,R04,25,5,Tidak,Tidak,
+SKU-P005,Kaos Polos Cotton Pria XL,Pakaian,Atasan Pria,0.2,30,22,2,89000,cepat,R09,100,20,Tidak,Tidak,
+SKU-M001,Mie Instan Goreng (kardus 40pcs),Makanan & Minuman,Makanan Instan,4.0,50,35,25,95000,cepat,R05,200,50,Tidak,Tidak,2027-06-30
+SKU-M002,Air Mineral 600ml (dus 24pcs),Makanan & Minuman,Minuman,15.0,45,30,30,40000,cepat,R05,300,80,Tidak,Tidak,2028-01-15
+SKU-M003,Susu UHT Full Cream 1L (dus 12),Makanan & Minuman,Minuman,12.5,40,28,22,120000,sedang,R15,100,20,Ya,Tidak,2026-11-30
+SKU-M004,Yogurt Stroberi 150ml (pak 6pcs),Makanan & Minuman,Dairy,0.9,20,15,8,48000,cepat,R15,80,25,Ya,Tidak,2026-10-20
+SKU-M005,Coklat Batangan Premium 100g,Makanan & Minuman,Snack,0.1,16,8,2,32000,sedang,R06,150,30,Tidak,Tidak,2027-03-31
+SKU-M006,Kopi Sachet (dos 100pcs),Makanan & Minuman,Minuman,1.2,28,18,12,85000,cepat,R06,90,20,Tidak,Tidak,2027-09-30
+SKU-R001,Blender Rumah Tangga 600W,Perlengkapan RT,Peralatan Dapur,2.2,22,22,38,350000,lambat,R07,20,4,Tidak,Tidak,
+SKU-R002,Panci Set Stainless 5-in-1,Perlengkapan RT,Peralatan Dapur,5.5,35,35,40,275000,lambat,R07,15,3,Tidak,Tidak,
+SKU-R003,Sabun Mandi Batang (1 lusin),Perlengkapan RT,Kebersihan,1.0,28,12,8,36000,cepat,R10,120,30,Tidak,Tidak,2028-12-31
+SKU-R004,Deterjen Bubuk 2kg,Perlengkapan RT,Kebersihan,2.1,28,10,38,52000,cepat,R09,90,20,Tidak,Tidak,
+SKU-R005,Vas Bunga Keramik Besar,Perlengkapan RT,Dekorasi,1.8,20,20,35,125000,lambat,R13,18,3,Tidak,Ya,
+SKU-G001,Cermin Dinding 60x90cm,Perlengkapan RT,Dekorasi,3.5,92,62,5,195000,lambat,R13,12,2,Tidak,Ya,
+SKU-G002,Gelas Kristal Set isi 6,Perlengkapan RT,Peralatan Makan,1.2,22,18,15,145000,sedang,R14,28,5,Tidak,Ya,
+SKU-C001,Daging Sapi Beku 500g,Makanan & Minuman,Daging Segar,0.52,22,15,4,75000,cepat,R16,60,15,Ya,Tidak,2026-10-31
+SKU-C002,Ayam Potong Beku 1kg,Makanan & Minuman,Daging Segar,1.05,24,18,6,42000,cepat,R16,90,25,Ya,Tidak,2026-10-15
+SKU-C003,Es Krim Vanilla 750ml,Makanan & Minuman,Frozen Dessert,0.8,14,14,18,55000,sedang,R15,40,10,Ya,Tidak,2027-02-28
+SKU-O001,Rak Besi Serbaguna 5 Susun,Perlengkapan RT,Furnitur,14.0,90,40,180,320000,lambat,R11,10,2,Tidak,Tidak,
+SKU-O002,Kasur Busa 160x200cm,Perlengkapan RT,Furnitur,22.0,200,160,20,850000,lambat,R12,6,1,Tidak,Tidak,
+SKU-O003,Meja Kerja Lipat Portable,Perlengkapan RT,Furnitur,7.5,100,50,10,420000,sedang,R11,14,3,Tidak,Tidak,
+SKU-O004,Karpet Bulu 150x200cm,Perlengkapan RT,Dekorasi,5.0,200,150,8,380000,lambat,R08,10,2,Tidak,Tidak,
