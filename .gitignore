@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Sistem operasi dan editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Berkas sementara uji persistensi
+data/processed/_probe_vectors.json
+docs/_report_build/

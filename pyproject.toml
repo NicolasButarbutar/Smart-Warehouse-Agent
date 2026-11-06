@@ -1,20 +1,28 @@
 [project]
 name = "smart-warehouse-agent"
-version = "0.2.0"
-description = "Smart Warehouse Management Agent - Milestone 2: Constraint Solver CSP (AC-3 + Backtracking MRV) untuk Penjadwalan Shift Staf & Optimasi Sumber Daya Gudang"
+version = "0.3.0"
+description = "Smart Warehouse Management Agent - Milestone 3: Basis Pengetahuan Korpus Enterprise dan Vector Semantic Search (ChromaDB + Sentence-Transformers)"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.14"
 authors = [
     { name = "Nicolas J Grace Butarbutar" },
     { name = "Indah Triyuni Siahaan" },
     { name = "Swasti Maristella Sihombing" },
 ]
 dependencies = [
+    "chromadb>=1.0,<2",
+    "numpy>=1.26",
     "openpyxl>=3.1.5",
+    "pypdf>=5.0",
+    "sentence-transformers>=3.0,<6",
 ]
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
+]
+report = [
+    "matplotlib>=3.8",
+    "reportlab>=4.0",
 ]
 
 [build-system]

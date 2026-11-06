@@ -1,5 +1,10 @@
-# Proyek ini hanya menggunakan pustaka standar Python (heapq, dataclasses, typing)
-# sehingga tidak ada dependensi wajib untuk menjalankan src/warehouse_search.py.
-#
-# Dependensi berikut opsional, untuk pengembangan/pengujian:
+# Alternatif instalasi tanpa uv: pip install -r requirements.txt
+# Modul M1 dan M2 hanya memakai pustaka standar; dependensi di bawah untuk M3.
+chromadb>=1.0,<2
+numpy>=1.26
+openpyxl>=3.1.5
+pypdf>=5.0
+sentence-transformers>=3.0,<6
+
+# Pengujian
 pytest>=8.0.0
