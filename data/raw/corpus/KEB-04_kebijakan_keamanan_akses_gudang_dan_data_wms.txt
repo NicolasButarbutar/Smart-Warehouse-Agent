@@ -1,0 +1,29 @@
+Kebijakan Keamanan Akses Gudang dan Data WMS
+
+1. Akses Fisik dan Pengawasan
+Kebijakan ini melindungi barang dan data operasi dari akses tidak sah, pencurian, serta kebocoran informasi.
+
+Akses Fisik.  Karyawan masuk menggunakan kartu akses dan wajib memakai tanda pengenal. Satu kartu berlaku untuk satu orang, dan meminjamkan kartu merupakan pelanggaran. Ruang server dan ruang barang bernilai tinggi hanya dapat dibuka oleh personel yang berwenang. Kartu yang hilang dilaporkan dalam 1 jam untuk dinonaktifkan.
+
+Pemeriksaan Barang Bawaan.  Tas besar disimpan di loker. Tas kecil diperiksa satpam ketika keluar. Barang pribadi seperti ponsel tidak boleh dipakai saat bertugas di lorong, kecuali perangkat kerja. Karyawan yang membawa barang perusahaan tanpa izin keluar dikenai tindakan disiplin.
+
+CCTV.  Kamera memantau dock, lorong, dan ruang bernilai tinggi selama 24 jam. Rekaman disimpan selama 90 hari. Hanya Kepala Gudang dan tim keamanan yang boleh mengakses rekaman, dan permintaan akses dicatat.
+
+2. Keamanan Sistem dan Kata Sandi
+Hak Akses WMS.  Akses WMS mengikuti prinsip hak minimum menurut jabatan. Operator hanya dapat melihat tugasnya. Penyesuaian stok hanya oleh Supervisor ke atas. Data master SKU hanya oleh Admin Gudang. Hak akses ditinjau setiap tiga bulan dan dicabut pada hari terakhir karyawan bekerja.
+
+Kata Sandi.  Kata sandi minimal 12 karakter, tidak boleh dibagikan, dan diganti setiap 90 hari. Akun terkunci setelah lima kali gagal masuk. Administrator wajib memakai autentikasi dua faktor. Perangkat genggam otomatis terkunci setelah 5 menit tidak aktif.
+
+Halaman 1 dari 2
+Dokumen terkendali - Gudang Nusantara Logistik - KEB-04
+
+3. Data Pribadi dan Insiden
+Data Pribadi.  Nama, alamat, dan nomor telepon pelanggan hanya dipakai untuk pengiriman. Dilarang menyalin data pelanggan ke perangkat pribadi atau aplikasi pesan. Label pengiriman bekas dihancurkan.
+
+Insiden Keamanan.  Dugaan pencurian atau kebocoran data dilaporkan kepada Kepala Gudang dan tim TI paling lambat 24 jam. Bukti tidak boleh diubah. Pencadangan basis data WMS dilakukan setiap hari pukul 02.00 dan diuji pemulihannya setiap kuartal.
+
+4. Tanggung Jawab dan Contoh Penerapan
+Tim TI mengelola akun dan pencatatan aktivitas, satpam menjalankan pemeriksaan fisik, dan Supervisor Gudang memastikan timnya mematuhi aturan.  Log aktivitas WMS disimpan selama satu tahun dan ditinjau bila ada selisih stok bernilai besar.
+
+Sebagai contoh, seorang operator menerima pesan yang mengaku dari tim TI dan meminta kata sandinya.  Operator tidak membalas dan segera melaporkan pesan itu, karena tim TI tidak pernah meminta kata sandi. Contoh lain, karyawan yang dimutasi dari gudang ke kantor pusat dicabut hak akses perangkat genggamnya pada hari perpindahan. Vendor yang perlu mengakses sistem memakai akun sementara berjangka waktu, bukan meminjam akun karyawan. Dokumen perusahaan tidak boleh diunggah ke layanan penyimpanan pribadi atau layanan AI publik tanpa izin. Pengunjung wajib mencatat identitas di pos keamanan, memakai kartu tamu, dan tidak boleh memotret area operasi tanpa izin Kepala Gudang.
+

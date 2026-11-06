@@ -1,0 +1,27 @@
+SOP Stock Opname dan Penyelesaian Selisih Stok
+
+1. Tujuan dan Jenis Penghitungan
+Prosedur ini memastikan catatan WMS sama dengan jumlah fisik sehingga keputusan slotting dan pemenuhan pesanan dapat diandalkan.
+
+Jenis Penghitungan.  Perusahaan melakukan cycle count harian dan stock opname menyeluruh dua kali setahun, pada bulan Juni dan Desember. Pada stock opname menyeluruh kegiatan penerimaan dan pengiriman dihentikan selama penghitungan.
+
+Frekuensi Cycle Count.  SKU dibagi menurut analisis ABC berdasarkan nilai dan perputaran. Kelas A dihitung setiap bulan, kelas B setiap kuartal, dan kelas C setiap semester. Lokasi fast-moving di R09 dan R10 dihitung setiap minggu. Penghitungan dilakukan oleh petugas yang tidak menangani lokasi tersebut pada hari itu.
+
+2. Metode dan Toleransi
+Penghitungan Buta.  Penghitungan memakai metode buta: petugas tidak melihat jumlah sistem. Petugas memindai label lokasi dan memasukkan jumlah fisik. Jika berbeda dengan sistem, penghitungan kedua dilakukan oleh orang lain, dan hasil kedua yang dipakai.
+
+Batas Toleransi.  Selisih hingga 0,5 persen dari nilai stok per lokasi dapat disesuaikan oleh Supervisor Gudang. Selisih di atas 0,5 sampai 2 persen memerlukan persetujuan Kepala Gudang. Selisih di atas 2 persen atau di atas Rp5.000.000 wajib diinvestigasi sebelum penyesuaian dan dilaporkan kepada bagian keuangan.
+
+Halaman 1 dari 2
+Dokumen terkendali - Gudang Nusantara Logistik - SOP-08
+
+3. Investigasi dan Target
+Investigasi.  Investigasi menelusuri riwayat pindai, pesanan yang tertunda, salah taruh di rak sekitar, dan rekaman kamera. Akar masalah dicatat dalam salah satu kode: salah taruh, salah pindai, kerusakan tidak tercatat, kehilangan, atau kesalahan pemasok. Investigasi harus selesai dalam 5 hari kerja.
+
+Target Akurasi.  Akurasi inventori ditargetkan minimal 98,5 persen pada tingkat lokasi. Bila akurasi suatu lorong turun di bawah target selama dua bulan berturut-turut, lorong tersebut menjalani penghitungan ulang penuh dan operatornya mengikuti pelatihan penyegaran.
+
+4. Tanggung Jawab dan Contoh Penerapan
+Admin Gudang menyusun jadwal penghitungan dan merekap hasil.  Supervisor Gudang memastikan petugas penghitung tidak dipengaruhi oleh petugas lokasi. Bagian keuangan mencocokkan nilai penyesuaian dengan pembukuan pada akhir bulan.
+
+Sebagai contoh, sistem mencatat 60 unit smartphone di R09, tetapi hitungan fisik 58 unit.  Penghitungan kedua menghasilkan 58 unit. Karena nilainya melewati Rp5.000.000, penyesuaian tidak langsung dibuat. Tim memeriksa rekaman pemindaian dan menemukan dua unit tersimpan di R10 karena salah taruh; stok dipindahkan dan tidak ada penyesuaian nilai. Contoh lain, selisih berulang pada lokasi yang sama menjadi tanda proses yang perlu dibenahi, bukan sekadar diperbaiki angkanya. Selama stock opname menyeluruh, label warna ditempel pada lokasi yang telah dihitung supaya tidak dihitung dua kali. Barang yang sedang berada di area staging atau karantina dihitung terpisah agar tidak tercatat sebagai stok siap jual.
+

@@ -1,0 +1,766 @@
+[
+ {
+  "id": "LIT-01",
+  "tipe": "literal",
+  "split": "dev",
+  "kueri": "Berapa lama Goods Receipt harus terbit untuk pengiriman di bawah 100 koli?",
+  "target_docs": [
+   "SOP-01"
+  ],
+  "answer_terms": [
+   "60 menit"
+  ]
+ },
+ {
+  "id": "LIT-02",
+  "tipe": "literal",
+  "split": "test",
+  "kueri": "Apa arti kode kesalahan E-305?",
+  "target_docs": [
+   "MAN-01"
+  ],
+  "answer_terms": [
+   "E-305"
+  ]
+ },
+ {
+  "id": "LIT-03",
+  "tipe": "literal",
+  "split": "dev",
+  "kueri": "Kapan alarm merah pada cold storage berbunyi?",
+  "target_docs": [
+   "SOP-05"
+  ],
+  "answer_terms": [
+   "Alarm merah"
+  ]
+ },
+ {
+  "id": "LIT-04",
+  "tipe": "literal",
+  "split": "test",
+  "kueri": "Seberapa sering cycle count kelas A dilakukan?",
+  "target_docs": [
+   "SOP-08"
+  ],
+  "answer_terms": [
+   "Kelas A"
+  ]
+ },
+ {
+  "id": "LIT-05",
+  "tipe": "literal",
+  "split": "dev",
+  "kueri": "Berapa hari cuti tahunan karyawan?",
+  "target_docs": [
+   "KEB-02"
+  ],
+  "answer_terms": [
+   "12 hari"
+  ]
+ },
+ {
+  "id": "LIT-06",
+  "tipe": "literal",
+  "split": "test",
+  "kueri": "Di mana titik kumpul evakuasi?",
+  "target_docs": [
+   "SOP-11"
+  ],
+  "answer_terms": [
+   "lapangan parkir timur"
+  ]
+ },
+ {
+  "id": "LIT-07",
+  "tipe": "literal",
+  "split": "dev",
+  "kueri": "Pada okupansi berapa persen rak dianggap penuh?",
+  "target_docs": [
+   "SOP-02"
+  ],
+  "answer_terms": [
+   "95 persen"
+  ]
+ },
+ {
+  "id": "LIT-08",
+  "tipe": "literal",
+  "split": "test",
+  "kueri": "Berapa panjang minimal kata sandi WMS?",
+  "target_docs": [
+   "KEB-04"
+  ],
+  "answer_terms": [
+   "12 karakter"
+  ]
+ },
+ {
+  "id": "SIN-01",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Berapa derajat ruangan pembeku harus dijaga supaya daging tidak rusak?",
+  "target_docs": [
+   "SOP-05"
+  ],
+  "answer_terms": [
+   "minus 18"
+  ]
+ },
+ {
+  "id": "SIN-02",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Apa yang harus disiapkan bila aliran listrik ke mesin pendingin tiba-tiba mati?",
+  "target_docs": [
+   "SOP-05"
+  ],
+  "answer_terms": [
+   "genset"
+  ]
+ },
+ {
+  "id": "SIN-03",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Barang yang paling cepat basi dikeluarkan lebih dulu, apa nama aturannya?",
+  "target_docs": [
+   "SOP-06"
+  ],
+  "answer_terms": [
+   "First Expired"
+  ]
+ },
+ {
+  "id": "SIN-04",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Makanan yang sudah lewat tanggal, bolehkah diberikan kepada pegawai?",
+  "target_docs": [
+   "SOP-06"
+  ],
+  "answer_terms": [
+   "dibawa pulang"
+  ]
+ },
+ {
+  "id": "SIN-05",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Seberapa berat beban yang boleh dipikul sendirian oleh seorang pekerja?",
+  "target_docs": [
+   "SOP-07"
+  ],
+  "answer_terms": [
+   "25 kg"
+  ]
+ },
+ {
+  "id": "SIN-06",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Kalau jumlah barang di komputer beda dengan yang ada di rak, siapa yang boleh mengoreksi?",
+  "target_docs": [
+   "SOP-08"
+  ],
+  "answer_terms": [
+   "0,5 persen"
+  ]
+ },
+ {
+  "id": "SIN-07",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Berapa lama konsumen dapat mengembalikan pesanan yang tidak cocok?",
+  "target_docs": [
+   "SOP-09"
+  ],
+  "answer_terms": [
+   "7 hari"
+  ]
+ },
+ {
+  "id": "SIN-08",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Apakah saya boleh menyetir mesin pengangkat palet tanpa sertifikat?",
+  "target_docs": [
+   "SOP-10"
+  ],
+  "answer_terms": [
+   "lisensi"
+  ]
+ },
+ {
+  "id": "SIN-09",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Berapa laju tertinggi kendaraan pengangkat di dalam bangunan?",
+  "target_docs": [
+   "SOP-10"
+  ],
+  "answer_terms": [
+   "8 km"
+  ]
+ },
+ {
+  "id": "SIN-10",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Apa yang dikerjakan pertama kali ketika melihat kobaran api di lorong?",
+  "target_docs": [
+   "SOP-11"
+  ],
+  "answer_terms": [
+   "alarm manual"
+  ]
+ },
+ {
+  "id": "SIN-11",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Sesudah jaga malam, apakah boleh langsung masuk kerja subuh?",
+  "target_docs": [
+   "KEB-01",
+   "KEB-02"
+  ],
+  "answer_terms": [
+   "shift Malam tidak boleh",
+   "tidak boleh lembur ke shift Pagi"
+  ]
+ },
+ {
+  "id": "SIN-12",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Berapa bayaran tambahan untuk bekerja melebihi jam normal?",
+  "target_docs": [
+   "KEB-02"
+  ],
+  "answer_terms": [
+   "1,5 kali"
+  ]
+ },
+ {
+  "id": "SIN-13",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Perlengkapan pelindung tubuh apa yang wajib dikenakan di area kerja?",
+  "target_docs": [
+   "KEB-03"
+  ],
+  "answer_terms": [
+   "Sepatu safety"
+  ]
+ },
+ {
+  "id": "SIN-14",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Berapa lama gambar dari kamera pengawas disimpan?",
+  "target_docs": [
+   "KEB-04"
+  ],
+  "answer_terms": [
+   "90 hari"
+  ]
+ },
+ {
+  "id": "SIN-15",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Saya tidak ingat kode masuk akun di alat pemindai, harus menghubungi siapa?",
+  "target_docs": [
+   "MAN-01"
+  ],
+  "answer_terms": [
+   "help desk"
+  ]
+ },
+ {
+  "id": "SIN-16",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Alat pemindai kehilangan sinyal internet, bagaimana nasib data yang sudah discan?",
+  "target_docs": [
+   "MAN-01"
+  ],
+  "answer_terms": [
+   "menyimpan hasil pindai"
+  ]
+ },
+ {
+  "id": "SIN-17",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Bagaimana perusahaan ekspedisi rekanan dinilai?",
+  "target_docs": [
+   "KEB-05"
+  ],
+  "answer_terms": [
+   "ketepatan jam jemput"
+  ]
+ },
+ {
+  "id": "SIN-18",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Truk penyuplai datang tanpa janji terlebih dulu, apa yang terjadi?",
+  "target_docs": [
+   "SOP-01"
+  ],
+  "answer_terms": [
+   "antrean tunggu"
+  ]
+ },
+ {
+  "id": "SIN-19",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Barang yang paling sering dipesan ditaruh di sebelah mana?",
+  "target_docs": [
+   "SOP-02"
+  ],
+  "answer_terms": [
+   "R09"
+  ]
+ },
+ {
+  "id": "SIN-20",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Bagaimana membungkus benda dari kaca supaya aman saat dikirim?",
+  "target_docs": [
+   "SOP-03"
+  ],
+  "answer_terms": [
+   "bubble wrap"
+  ]
+ },
+ {
+  "id": "SIN-21",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Pukul berapa jasa antar datang mengambil paket?",
+  "target_docs": [
+   "SOP-04"
+  ],
+  "answer_terms": [
+   "11.00"
+  ]
+ },
+ {
+  "id": "SIN-22",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "Peraturan pemerintah mana yang membatasi kerja tambahan karyawan?",
+  "target_docs": [
+   "REG-01"
+  ],
+  "answer_terms": [
+   "18 jam"
+  ]
+ },
+ {
+  "id": "SIN-23",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "What is the required temperature for frozen products?",
+  "target_docs": [
+   "SOP-05"
+  ],
+  "answer_terms": [
+   "minus 18"
+  ]
+ },
+ {
+  "id": "SIN-24",
+  "tipe": "sinonim",
+  "split": "test",
+  "kueri": "How many overtime hours can an employee work per week?",
+  "target_docs": [
+   "KEB-02",
+   "REG-01"
+  ],
+  "answer_terms": [
+   "18 jam"
+  ]
+ },
+ {
+  "id": "SIN-25",
+  "tipe": "sinonim",
+  "split": "dev",
+  "kueri": "Berapa banyak contoh kardus yang dicek ketika kiriman baru tiba?",
+  "target_docs": [
+   "SOP-01"
+  ],
+  "answer_terms": [
+   "10 persen"
+  ]
+ },
+ {
+  "id": "AMB-01",
+  "tipe": "ambigu",
+  "split": "dev",
+  "kueri": "Berapa batas jam kerja?",
+  "target_docs": [
+   "KEB-01",
+   "KEB-02",
+   "REG-01"
+  ],
+  "answer_terms": [
+   "40 jam",
+   "18 jam"
+  ]
+ },
+ {
+  "id": "AMB-02",
+  "tipe": "ambigu",
+  "split": "test",
+  "kueri": "Bagaimana penanganan barang rusak?",
+  "target_docs": [
+   "SOP-07",
+   "SOP-09",
+   "SOP-01"
+  ],
+  "answer_terms": [
+   "rusak"
+  ]
+ },
+ {
+  "id": "AMB-03",
+  "tipe": "ambigu",
+  "split": "dev",
+  "kueri": "Bagaimana aturan suhu?",
+  "target_docs": [
+   "SOP-05",
+   "SOP-04",
+   "SOP-01"
+  ],
+  "answer_terms": [
+   "derajat"
+  ]
+ },
+ {
+  "id": "AMB-04",
+  "tipe": "ambigu",
+  "split": "test",
+  "kueri": "Siapa yang harus dilapori kalau ada masalah?",
+  "target_docs": [
+   "SOP-07",
+   "SOP-10",
+   "SOP-11",
+   "KEB-03",
+   "KEB-04",
+   "MAN-01",
+   "SOP-05"
+  ],
+  "answer_terms": [
+   "dilaporkan",
+   "laporkan",
+   "melapor"
+  ]
+ },
+ {
+  "id": "AMB-05",
+  "tipe": "ambigu",
+  "split": "dev",
+  "kueri": "Aturan forklift apa saja?",
+  "target_docs": [
+   "SOP-10",
+   "REG-01"
+  ],
+  "answer_terms": [
+   "forklift"
+  ]
+ },
+ {
+  "id": "AMB-06",
+  "tipe": "ambigu",
+  "split": "test",
+  "kueri": "Kapan barang dimusnahkan?",
+  "target_docs": [
+   "SOP-06",
+   "SOP-05",
+   "SOP-09"
+  ],
+  "answer_terms": [
+   "dimusnahkan",
+   "pemusnahan"
+  ]
+ },
+ {
+  "id": "AMB-07",
+  "tipe": "ambigu",
+  "split": "dev",
+  "kueri": "Prosedur pengecekan seperti apa?",
+  "target_docs": [
+   "SOP-01",
+   "SOP-08",
+   "SOP-10",
+   "SOP-04"
+  ],
+  "answer_terms": [
+   "pemeriksaan",
+   "penghitungan"
+  ]
+ },
+ {
+  "id": "AMB-08",
+  "tipe": "ambigu",
+  "split": "test",
+  "kueri": "Bagaimana aturan karantina?",
+  "target_docs": [
+   "SOP-09",
+   "SOP-06",
+   "SOP-07"
+  ],
+  "answer_terms": [
+   "karantina"
+  ]
+ },
+ {
+  "id": "AMB-09",
+  "tipe": "ambigu",
+  "split": "dev",
+  "kueri": "Berapa target akurasi?",
+  "target_docs": [
+   "SOP-03",
+   "SOP-08",
+   "KEB-05"
+  ],
+  "answer_terms": [
+   "akurasi"
+  ]
+ },
+ {
+  "id": "AMB-10",
+  "tipe": "ambigu",
+  "split": "test",
+  "kueri": "Bagaimana kalau ada yang terlambat?",
+  "target_docs": [
+   "KEB-01",
+   "SOP-04"
+  ],
+  "answer_terms": [
+   "terlambat",
+   "keterlambatan"
+  ]
+ },
+ {
+  "id": "OOD-01",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Bagaimana resep rendang daging sapi yang empuk?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-02",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Berapa harga sewa gudang per meter persegi di Medan?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-03",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Siapa presiden pertama Indonesia?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-04",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Berapa gaji pokok direktur keuangan perusahaan?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-05",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Berapa jarak bumi ke bulan?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-06",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Bagaimana cara memperbaiki mesin diesel truk yang mogok?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-07",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Rekomendasi film romantis terbaik tahun ini",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-08",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Merek forklift listrik apa yang paling murah di pasaran?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-09",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Apa ibu kota Australia?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-10",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Berapa harga jual smartphone Android 5G kepada pelanggan?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-11",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Bagaimana cara menanam cabai di dalam pot?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-12",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Bagaimana mengurus izin usaha untuk menjadi pemasok baru?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-13",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Jelaskan hukum kedua Newton",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-14",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Bagaimana menghitung pajak pertambahan nilai atas penjualan barang?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-15",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Tips menurunkan berat badan dengan cepat",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-16",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Bagaimana prosedur ekspor barang melalui bea cukai?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-17",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Berapa skor pertandingan Liga Inggris tadi malam?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-18",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Bagaimana cara memasak ayam potong beku agar matang merata?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-19",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "How do I bake sourdough bread at home?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-20",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Berapa tunjangan hari raya yang diterima karyawan?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-21",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Cara membuat website dengan framework React",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-22",
+  "tipe": "ood",
+  "split": "dev",
+  "kueri": "Kapan gudang cabang Surabaya akan dibuka?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ },
+ {
+  "id": "OOD-23",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Apa warna terbaik untuk mengecat ruang tamu kecil?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "jauh"
+ },
+ {
+  "id": "OOD-24",
+  "tipe": "ood",
+  "split": "test",
+  "kueri": "Bagaimana merancang iklan untuk promo akhir tahun?",
+  "target_docs": [],
+  "answer_terms": [],
+  "ood_jenis": "dekat"
+ }
+]

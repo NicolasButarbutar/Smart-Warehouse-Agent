@@ -1,0 +1,27 @@
+SOP Picking dan Packing Pesanan
+
+1. Tujuan dan Gelombang Pesanan
+Prosedur ini menjamin pesanan pelanggan diambil dengan benar, dikemas aman, dan siap dikirim sesuai batas waktu layanan.
+
+Pembentukan Gelombang Pesanan.  WMS mengelompokkan pesanan ke dalam gelombang setiap 30 menit. Pesanan ekspres diprioritaskan dan dicetak paling awal. Pada periode promosi, interval gelombang dipersingkat menjadi 15 menit dan Supervisor Gudang dapat menambahkan petugas dari shift yang sama.
+
+2. Pengambilan Barang
+Pengambilan Barang.  Petugas picking menerima daftar ambil digital yang diurutkan menurut rute terpendek. Petugas memindai label rak dan barcode barang pada setiap pengambilan. Bila hasil pindai tidak cocok, sistem menolak konfirmasi dan barang tidak boleh diambil. Jika stok fisik kurang dari jumlah pada daftar, petugas memilih "short pick" sehingga WMS mencari lokasi lain dan memberi tahu Supervisor Gudang.
+
+Kaidah Pengambilan Pangan.  Pangan diambil dari lot dengan tanggal kedaluwarsa terdekat sesuai SOP FEFO. Barang beku diambil paling akhir dalam satu rute dan dimasukkan ke kotak berinsulasi agar waktunya di luar cold storage tidak lebih dari 10 menit.
+
+Halaman 1 dari 2
+Dokumen terkendali - Gudang Nusantara Logistik - SOP-03
+
+3. Verifikasi, Pengemasan, dan Target
+Verifikasi di Meja Kemas.  Petugas packing memindai ulang setiap barang terhadap pesanan. Selisih sekecil apa pun membuat pesanan ditahan pada keranjang merah untuk diperiksa ulang. Pesanan bernilai di atas Rp10.000.000 wajib diverifikasi oleh dua orang.
+
+Pengemasan.  Gunakan kardus dengan ukuran terkecil yang muat. Barang pecah belah dilapisi bubble wrap dua lapis dan diberi stiker FRAGILE. Barang cair dimasukkan ke plastik tersegel. Berat paket ditimbang, dan selisih lebih dari 5 persen terhadap berat sistem harus diperiksa ulang.
+
+Target Kinerja.  Akurasi picking ditargetkan minimal 99,5 persen. Pesanan ekspres harus selesai dikemas dalam 2 jam sejak diterima, sedangkan pesanan reguler dalam 8 jam. Pencapaian dipantau harian melalui dasbor kinerja.
+
+4. Tanggung Jawab dan Contoh Penerapan
+Supervisor Gudang membagi petugas per zona pada awal shift dan memantau antrean gelombang.  Petugas picking bertanggung jawab atas kecocokan barang, sedangkan petugas packing bertanggung jawab atas keamanan kemasan dan kebenaran label pengiriman.
+
+Sebagai contoh, satu pesanan berisi kaos, susu UHT, dan es krim.  Rute dimulai dari rak suhu ruang di R09, lalu susu di kompartemen chilled, dan es krim diambil terakhir. Bila petugas menemukan hanya dua dari tiga pcs yang diminta, ia memilih short pick dan tidak menukar dengan ukuran lain. Mengganti barang tanpa persetujuan pelanggan dilarang. Pesanan yang terdiri dari beberapa koli diberi label 1/3, 2/3, dan 3/3 agar kurir mengetahui jumlah paket. Label yang rusak harus dicetak ulang dan tidak boleh ditempel dengan solatip di atas barcode. Kesalahan kirim dicatat atas nama proses, bukan orang, lalu ditinjau pada rapat mingguan untuk mencari penyebabnya.
+

@@ -1,0 +1,29 @@
+Manual Penggunaan WMS dan Perangkat Genggam
+
+1. Memulai dan Memindai
+Manual ini menjadi panduan singkat bagi operator dalam memakai Warehouse Management System melalui perangkat genggam, serta langkah ketika terjadi gangguan.
+
+Masuk ke Sistem.  Tekan tombol daya, pilih aplikasi WMS, lalu masukkan NIK dan kata sandi. Pilih shift yang aktif. Menu utama menampilkan Terima, Simpan, Ambil, Hitung, dan Pindah. Baterai perangkat harus lebih dari 30 persen pada awal shift. Tukar baterai di ruang admin bila kurang.
+
+Memindai.  Arahkan pemindai ke barcode pada jarak 10 sampai 30 cm, lalu tekan pemicu. Bunyi satu kali berarti berhasil dan dua kali berarti gagal. Bila barcode rusak atau tidak terbaca, ketik nomor di bawah barcode. Jika nomor pun tidak terbaca, serahkan barang kepada Admin Gudang untuk dicetak label pengganti.
+
+2. Kode Kesalahan dan Jaringan
+Kode Kesalahan.  E-101 berarti lokasi tidak cocok dengan daftar tugas; periksa kembali label rak. E-102 berarti SKU berbeda dengan pesanan. E-203 berarti stok tidak mencukupi. E-305 berarti lot diblokir karena kedaluwarsa atau karantina. E-408 berarti koneksi jaringan terputus. E-500 berarti gangguan server; laporkan kepada tim TI.
+
+Bekerja Saat Jaringan Terputus.  Pada kondisi E-408, perangkat menyimpan hasil pindai sementara dan menyinkronkannya saat tersambung. Daya tampung mode luring adalah 500 transaksi. Pindah ke area dengan sinyal baik, karena titik akses berada di setiap ujung lorong.
+
+Halaman 1 dari 2
+Dokumen terkendali - Gudang Nusantara Logistik - MAN-01
+
+3. Sistem Mati, Perawatan, dan Bantuan
+Prosedur Sistem Mati.  Bila WMS tidak dapat diakses lebih dari 30 menit, Supervisor Gudang mengaktifkan prosedur manual. Transaksi dicatat pada formulir kertas bernomor dan ditandatangani dua orang. Daftar ambil dicetak dari cadangan terakhir. Setelah sistem pulih, Admin Gudang memasukkan semua formulir dalam 4 jam dan melakukan penghitungan pada lokasi terdampak.
+
+Perawatan Perangkat.  Bersihkan lensa pemindai dengan kain kering setiap akhir shift. Perangkat jatuh atau rusak dilaporkan kepada Admin Gudang. Pemasangan aplikasi lain dilarang.
+
+Bantuan.  Gangguan dilaporkan melalui help desk TI di ekstensi 1100 atau melalui menu Bantuan. Target respons adalah 15 menit pada jam operasi.
+
+4. Tanggung Jawab dan Contoh Penerapan
+Operator bertanggung jawab atas perangkat yang dipinjam selama shift, Admin Gudang mencatat peminjaman, dan tim TI memperbarui aplikasi di luar jam sibuk.  Setiap perangkat dikembalikan ke dok pengisian daya pada akhir shift.
+
+Sebagai contoh, muncul E-305 saat memindai yogurt.  Artinya lot tersebut diblokir, sehingga operator tidak boleh mengambilnya dan harus memilih lot lain yang ditampilkan sistem. Bila muncul E-101, biasanya operator berada pada rak yang salah; periksa kembali nomor rak sebelum memindai ulang. Contoh lain, jika layar membeku, tahan tombol daya selama sepuluh detik untuk memulai ulang, lalu periksa apakah transaksi terakhir tersimpan pada menu Riwayat. Jangan mengulangi transaksi sebelum memeriksa riwayat karena stok dapat tercatat dua kali. Lupa kata sandi ditangani melalui help desk TI setelah verifikasi NIK. Layar perangkat dibersihkan tanpa cairan berlebih, dan perangkat tidak boleh dibawa ke ruang beku lebih dari 30 menit karena baterainya cepat turun.
+
