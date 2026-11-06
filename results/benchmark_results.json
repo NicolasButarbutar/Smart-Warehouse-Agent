@@ -1,0 +1,3142 @@
+{
+  "lingkungan": {
+    "python": "3.12.13",
+    "os": "Windows-11-10.0.26200-SP0",
+    "paket": {
+      "chromadb": "1.5.9",
+      "sentence-transformers": "5.7.0",
+      "torch": "2.15.0",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pypdf": "6.21.4"
+    },
+    "waktu": "2026-11-04 20:16:57 +0700"
+  },
+  "perbandingan_model": {
+    "baris": [
+      {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "dimensi": 384,
+        "max_seq_length": 256,
+        "detik_encode_korpus": 10.542776700000104,
+        "pct_terpotong_model": 0.0,
+        "skor_seleksi": 0.534505772005772,
+        "n": 22,
+        "hit_at_1": 0.3181818181818182,
+        "hit_at_1_ci95": [
+          0.1636038735469248,
+          0.5268177721716065
+        ],
+        "hit_at_3": 0.5909090909090909,
+        "hit_at_5": 0.6363636363636364,
+        "mrr": 0.4595779220779221,
+        "answer_at_3": 0.4090909090909091,
+        "auc_ood": 0.7348484848484849,
+        "cos_rata2_domain": 0.6382711665196852,
+        "cos_rata2_ood": 0.5740835120280584
+      },
+      {
+        "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "dimensi": 384,
+        "max_seq_length": 128,
+        "detik_encode_korpus": 12.047350099994219,
+        "pct_terpotong_model": 12.080536912751677,
+        "skor_seleksi": 0.8510101010101009,
+        "n": 22,
+        "hit_at_1": 0.7727272727272727,
+        "hit_at_1_ci95": [
+          0.5655964393704065,
+          0.8987710920517964
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9090909090909091,
+        "mrr": 0.8333333333333333,
+        "answer_at_3": 0.7272727272727273,
+        "auc_ood": 0.9924242424242424,
+        "cos_rata2_domain": 0.596322241154584,
+        "cos_rata2_ood": 0.3051934875547886
+      },
+      {
+        "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        "dimensi": 768,
+        "max_seq_length": 128,
+        "detik_encode_korpus": 41.56241379999847,
+        "pct_terpotong_model": 12.080536912751677,
+        "skor_seleksi": 0.9015151515151515,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 1.0,
+        "mrr": 0.9128787878787878,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9734848484848485,
+        "cos_rata2_domain": 0.6160110817714171,
+        "cos_rata2_ood": 0.31650540977716446
+      }
+    ],
+    "terpilih": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "aturan": "rata-rata MRR, Answer@3, dan AUC out-of-domain pada kueri dev"
+  },
+  "eksperimen_chunking": {
+    "baris": [
+      {
+        "chunk_words": 40,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 234,
+        "kata_rata2": 30.70940170940171,
+        "kata_min": 6,
+        "kata_maks": 40,
+        "token_rata2": 69.77777777777777,
+        "token_p95": 89.0,
+        "token_maks": 99,
+        "token_per_kata": 2.2721959365432784,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 1.0,
+        "mrr": 0.9068181818181817,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9621212121212122,
+        "cos_rata2_domain": 0.6300654153932225,
+        "cos_rata2_ood": 0.3378298009435336
+      },
+      {
+        "chunk_words": 40,
+        "overlap_ratio": 0.1,
+        "overlap_words": 4,
+        "jumlah_chunk": 239,
+        "kata_rata2": 30.393305439330543,
+        "kata_min": 6,
+        "kata_maks": 40,
+        "token_rata2": 69.56066945606695,
+        "token_p95": 89.0,
+        "token_maks": 99,
+        "token_per_kata": 2.288683920704846,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 1.0,
+        "mrr": 0.9068181818181817,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9583333333333334,
+        "cos_rata2_domain": 0.6288567889820446,
+        "cos_rata2_ood": 0.3419033909837405
+      },
+      {
+        "chunk_words": 40,
+        "overlap_ratio": 0.2,
+        "overlap_words": 8,
+        "jumlah_chunk": 245,
+        "kata_rata2": 30.526530612244898,
+        "kata_min": 6,
+        "kata_maks": 40,
+        "token_rata2": 69.85306122448979,
+        "token_p95": 89.0,
+        "token_maks": 99,
+        "token_per_kata": 2.2882738334001873,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.9090909090909091,
+        "hit_at_1_ci95": [
+          0.7218461934161421,
+          0.9747051037171622
+        ],
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9469696969696969,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9659090909090909,
+        "cos_rata2_domain": 0.6309524408795617,
+        "cos_rata2_ood": 0.34593205774823826
+      },
+      {
+        "chunk_words": 40,
+        "overlap_ratio": 0.3,
+        "overlap_words": 12,
+        "jumlah_chunk": 254,
+        "kata_rata2": 31.34251968503937,
+        "kata_min": 6,
+        "kata_maks": 40,
+        "token_rata2": 71.1732283464567,
+        "token_p95": 89.35,
+        "token_maks": 99,
+        "token_per_kata": 2.2708202487124733,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.9090909090909091,
+        "hit_at_1_ci95": [
+          0.7218461934161421,
+          0.9747051037171622
+        ],
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9393939393939394,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9734848484848485,
+        "cos_rata2_domain": 0.640904043208469,
+        "cos_rata2_ood": 0.3474130059281985
+      },
+      {
+        "chunk_words": 55,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 178,
+        "kata_rata2": 40.37078651685393,
+        "kata_min": 5,
+        "kata_maks": 55,
+        "token_rata2": 84.35393258426966,
+        "token_p95": 111.30000000000001,
+        "token_maks": 120,
+        "token_per_kata": 2.0894795435569162,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.7727272727272727,
+        "hit_at_1_ci95": [
+          0.5655964393704065,
+          0.8987710920517964
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 1.0,
+        "mrr": 0.8598484848484849,
+        "answer_at_3": 0.7727272727272727,
+        "auc_ood": 0.9848484848484849,
+        "cos_rata2_domain": 0.6147599030624736,
+        "cos_rata2_ood": 0.31968121975660324
+      },
+      {
+        "chunk_words": 55,
+        "overlap_ratio": 0.1,
+        "overlap_words": 6,
+        "jumlah_chunk": 179,
+        "kata_rata2": 40.59217877094972,
+        "kata_min": 5,
+        "kata_maks": 55,
+        "token_rata2": 84.86033519553072,
+        "token_p95": 111.0,
+        "token_maks": 124,
+        "token_per_kata": 2.090558766859345,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.7727272727272727,
+        "hit_at_1_ci95": [
+          0.5655964393704065,
+          0.8987710920517964
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 1.0,
+        "mrr": 0.8598484848484849,
+        "answer_at_3": 0.7727272727272727,
+        "auc_ood": 0.9848484848484849,
+        "cos_rata2_domain": 0.6150559186935425,
+        "cos_rata2_ood": 0.3196764724949996
+      },
+      {
+        "chunk_words": 55,
+        "overlap_ratio": 0.2,
+        "overlap_words": 11,
+        "jumlah_chunk": 181,
+        "kata_rata2": 42.29834254143646,
+        "kata_min": 11,
+        "kata_maks": 55,
+        "token_rata2": 87.60220994475138,
+        "token_p95": 111.0,
+        "token_maks": 124,
+        "token_per_kata": 2.071055381400209,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9015151515151515,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9886363636363636,
+        "cos_rata2_domain": 0.6275902837514877,
+        "cos_rata2_ood": 0.3252670702834924
+      },
+      {
+        "chunk_words": 55,
+        "overlap_ratio": 0.3,
+        "overlap_words": 16,
+        "jumlah_chunk": 193,
+        "kata_rata2": 43.056994818652846,
+        "kata_min": 14,
+        "kata_maks": 55,
+        "token_rata2": 88.74611398963731,
+        "token_p95": 111.0,
+        "token_maks": 120,
+        "token_per_kata": 2.061131167268351,
+        "pct_terpotong_model": 0.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9242424242424242,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.6270762478763406,
+        "cos_rata2_ood": 0.33137036114931107
+      },
+      {
+        "chunk_words": 70,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 144,
+        "kata_rata2": 49.90277777777778,
+        "kata_min": 7,
+        "kata_maks": 70,
+        "token_rata2": 98.58333333333333,
+        "token_p95": 133.85,
+        "token_maks": 146,
+        "token_per_kata": 1.9755079320901754,
+        "pct_terpotong_model": 12.5,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.9090909090909091,
+        "hit_at_1_ci95": [
+          0.7218461934161421,
+          0.9747051037171622
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.9287878787878788,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.6081442900679328,
+        "cos_rata2_ood": 0.3133585217098395
+      },
+      {
+        "chunk_words": 70,
+        "overlap_ratio": 0.1,
+        "overlap_words": 7,
+        "jumlah_chunk": 147,
+        "kata_rata2": 49.55102040816327,
+        "kata_min": 7,
+        "kata_maks": 70,
+        "token_rata2": 98.34693877551021,
+        "token_p95": 134.7,
+        "token_maks": 147,
+        "token_per_kata": 1.9847611202635915,
+        "pct_terpotong_model": 10.884353741496598,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.9060606060606061,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9734848484848485,
+        "cos_rata2_domain": 0.6102514903653752,
+        "cos_rata2_ood": 0.3136244515577952
+      },
+      {
+        "chunk_words": 70,
+        "overlap_ratio": 0.2,
+        "overlap_words": 14,
+        "jumlah_chunk": 149,
+        "kata_rata2": 51.61073825503356,
+        "kata_min": 7,
+        "kata_maks": 70,
+        "token_rata2": 101.79194630872483,
+        "token_p95": 135.6,
+        "token_maks": 147,
+        "token_per_kata": 1.9723016905071522,
+        "pct_terpotong_model": 12.080536912751677,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 1.0,
+        "mrr": 0.9128787878787878,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9734848484848485,
+        "cos_rata2_domain": 0.6160110817714171,
+        "cos_rata2_ood": 0.31650540977716446
+      },
+      {
+        "chunk_words": 70,
+        "overlap_ratio": 0.3,
+        "overlap_words": 21,
+        "jumlah_chunk": 157,
+        "kata_rata2": 53.71337579617835,
+        "kata_min": 13,
+        "kata_maks": 70,
+        "token_rata2": 104.67515923566879,
+        "token_p95": 135.2,
+        "token_maks": 148,
+        "token_per_kata": 1.9487726787620063,
+        "pct_terpotong_model": 13.375796178343949,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 1.0,
+        "mrr": 0.8901515151515151,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9810606060606061,
+        "cos_rata2_domain": 0.6113883676854047,
+        "cos_rata2_ood": 0.31947237253189087
+      },
+      {
+        "chunk_words": 90,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 114,
+        "kata_rata2": 63.03508771929825,
+        "kata_min": 5,
+        "kata_maks": 90,
+        "token_rata2": 118.37719298245614,
+        "token_p95": 164.0,
+        "token_maks": 172,
+        "token_per_kata": 1.8779571388811578,
+        "pct_terpotong_model": 49.12280701754386,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.8636363636363636,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.868939393939394,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9659090909090909,
+        "cos_rata2_domain": 0.5926122855056416,
+        "cos_rata2_ood": 0.3139822979768117
+      },
+      {
+        "chunk_words": 90,
+        "overlap_ratio": 0.1,
+        "overlap_words": 9,
+        "jumlah_chunk": 114,
+        "kata_rata2": 63.75438596491228,
+        "kata_min": 5,
+        "kata_maks": 90,
+        "token_rata2": 119.5701754385965,
+        "token_p95": 164.0,
+        "token_maks": 172,
+        "token_per_kata": 1.8754815630159605,
+        "pct_terpotong_model": 50.0,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 1.0,
+        "mrr": 0.8765151515151516,
+        "answer_at_3": 0.8181818181818182,
+        "auc_ood": 0.9659090909090909,
+        "cos_rata2_domain": 0.592243800109083,
+        "cos_rata2_ood": 0.31285373494029045
+      },
+      {
+        "chunk_words": 90,
+        "overlap_ratio": 0.2,
+        "overlap_words": 18,
+        "jumlah_chunk": 114,
+        "kata_rata2": 66.73684210526316,
+        "kata_min": 18,
+        "kata_maks": 90,
+        "token_rata2": 123.90350877192982,
+        "token_p95": 164.0,
+        "token_maks": 172,
+        "token_per_kata": 1.8565983175604626,
+        "pct_terpotong_model": 52.63157894736842,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 1.0,
+        "mrr": 0.8992424242424243,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.5962129411372271,
+        "cos_rata2_ood": 0.3116500563919544
+      },
+      {
+        "chunk_words": 90,
+        "overlap_ratio": 0.3,
+        "overlap_words": 27,
+        "jumlah_chunk": 114,
+        "kata_rata2": 69.85087719298245,
+        "kata_min": 23,
+        "kata_maks": 90,
+        "token_rata2": 128.50877192982455,
+        "token_p95": 164.0,
+        "token_maks": 172,
+        "token_per_kata": 1.839758884842396,
+        "pct_terpotong_model": 57.89473684210526,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8636363636363636,
+        "hit_at_1_ci95": [
+          0.6666458812053,
+          0.9525108273576373
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 1.0,
+        "mrr": 0.8992424242424243,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.5980936234647577,
+        "cos_rata2_ood": 0.30858289326230687
+      },
+      {
+        "chunk_words": 110,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 99,
+        "kata_rata2": 72.58585858585859,
+        "kata_min": 13,
+        "kata_maks": 109,
+        "token_rata2": 132.65656565656565,
+        "token_p95": 190.2,
+        "token_maks": 212,
+        "token_per_kata": 1.8275814082939048,
+        "pct_terpotong_model": 62.62626262626262,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8814935064935064,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9772727272727273,
+        "cos_rata2_domain": 0.5920568230477247,
+        "cos_rata2_ood": 0.30488330374161404
+      },
+      {
+        "chunk_words": 110,
+        "overlap_ratio": 0.1,
+        "overlap_words": 11,
+        "jumlah_chunk": 99,
+        "kata_rata2": 73.0909090909091,
+        "kata_min": 14,
+        "kata_maks": 109,
+        "token_rata2": 133.5151515151515,
+        "token_p95": 190.2,
+        "token_maks": 212,
+        "token_per_kata": 1.8266998341625207,
+        "pct_terpotong_model": 62.62626262626262,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8739177489177489,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9772727272727273,
+        "cos_rata2_domain": 0.5920568230477247,
+        "cos_rata2_ood": 0.3047832250595093
+      },
+      {
+        "chunk_words": 110,
+        "overlap_ratio": 0.2,
+        "overlap_words": 22,
+        "jumlah_chunk": 99,
+        "kata_rata2": 76.16161616161617,
+        "kata_min": 25,
+        "kata_maks": 109,
+        "token_rata2": 138.0,
+        "token_p95": 190.2,
+        "token_maks": 212,
+        "token_per_kata": 1.8119363395225465,
+        "pct_terpotong_model": 62.62626262626262,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.7727272727272727,
+        "hit_at_1_ci95": [
+          0.5655964393704065,
+          0.8987710920517964
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8481060606060606,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.5901790261268616,
+        "cos_rata2_ood": 0.30620260785023373
+      },
+      {
+        "chunk_words": 110,
+        "overlap_ratio": 0.3,
+        "overlap_words": 33,
+        "jumlah_chunk": 99,
+        "kata_rata2": 79.02020202020202,
+        "kata_min": 27,
+        "kata_maks": 109,
+        "token_rata2": 142.06060606060606,
+        "token_p95": 190.2,
+        "token_maks": 212,
+        "token_per_kata": 1.7977757893391282,
+        "pct_terpotong_model": 63.63636363636363,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8739177489177489,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9659090909090909,
+        "cos_rata2_domain": 0.5943663228641857,
+        "cos_rata2_ood": 0.3080519313613574
+      },
+      {
+        "chunk_words": 130,
+        "overlap_ratio": 0.0,
+        "overlap_words": 0,
+        "jumlah_chunk": 88,
+        "kata_rata2": 81.6590909090909,
+        "kata_min": 10,
+        "kata_maks": 129,
+        "token_rata2": 146.1818181818182,
+        "token_p95": 215.64999999999998,
+        "token_maks": 237,
+        "token_per_kata": 1.790147509045366,
+        "pct_terpotong_model": 70.45454545454545,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8928571428571428,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9772727272727273,
+        "cos_rata2_domain": 0.594607640396465,
+        "cos_rata2_ood": 0.3044224753975868
+      },
+      {
+        "chunk_words": 130,
+        "overlap_ratio": 0.1,
+        "overlap_words": 13,
+        "jumlah_chunk": 88,
+        "kata_rata2": 82.69318181818181,
+        "kata_min": 13,
+        "kata_maks": 129,
+        "token_rata2": 147.95454545454547,
+        "token_p95": 215.64999999999998,
+        "token_maks": 237,
+        "token_per_kata": 1.789198845678164,
+        "pct_terpotong_model": 70.45454545454545,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9545454545454546,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.8863636363636364,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9734848484848485,
+        "cos_rata2_domain": 0.5927994427355853,
+        "cos_rata2_ood": 0.3070608749985695
+      },
+      {
+        "chunk_words": 130,
+        "overlap_ratio": 0.2,
+        "overlap_words": 26,
+        "jumlah_chunk": 88,
+        "kata_rata2": 84.60227272727273,
+        "kata_min": 13,
+        "kata_maks": 129,
+        "token_rata2": 150.75,
+        "token_p95": 215.64999999999998,
+        "token_maks": 237,
+        "token_per_kata": 1.781867024848892,
+        "pct_terpotong_model": 70.45454545454545,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.875,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9659090909090909,
+        "cos_rata2_domain": 0.5908403234048323,
+        "cos_rata2_ood": 0.3087136621276538
+      },
+      {
+        "chunk_words": 130,
+        "overlap_ratio": 0.3,
+        "overlap_words": 39,
+        "jumlah_chunk": 88,
+        "kata_rata2": 86.875,
+        "kata_min": 40,
+        "kata_maks": 129,
+        "token_rata2": 153.95454545454547,
+        "token_p95": 215.64999999999998,
+        "token_maks": 237,
+        "token_per_kata": 1.7721386527141922,
+        "pct_terpotong_model": 70.45454545454545,
+        "pct_akhir_kalimat_utuh": 100.0,
+        "n": 22,
+        "hit_at_1": 0.8181818181818182,
+        "hit_at_1_ci95": [
+          0.6148297802336213,
+          0.9269323397589488
+        ],
+        "hit_at_3": 0.9090909090909091,
+        "hit_at_5": 0.9545454545454546,
+        "mrr": 0.875,
+        "answer_at_3": 0.8636363636363636,
+        "auc_ood": 0.9696969696969697,
+        "cos_rata2_domain": 0.5897934301332994,
+        "cos_rata2_ood": 0.3070892666776975
+      }
+    ],
+    "terpilih": {
+      "chunk_words": 40,
+      "overlap_words": 8
+    },
+    "aturan": "terpotong model <= 5.0%, lalu MRR, Answer@3, AUC, jumlah chunk tersedikit"
+  },
+  "kalibrasi_ambang": {
+    "terpilih": {
+      "threshold": 0.4688519686460495,
+      "tp": 11,
+      "fp": 2,
+      "fn": 1,
+      "tn": 20,
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "f1": 0.8799999999999999,
+      "false_reject_rate": 0.09090909090909091,
+      "precision_ci95": [
+        0.5776482949136899,
+        0.9567427368172621
+      ],
+      "recall_ci95": [
+        0.6461140782014047,
+        0.9851352905492264
+      ],
+      "constraint_met": true
+    },
+    "skor_dev_domain": [
+      0.7550718784332275,
+      0.7388635277748108,
+      0.6712291240692139,
+      0.6675825119018555,
+      0.7092239856719971,
+      0.4935069680213928,
+      0.6248936057090759,
+      0.6468852758407593,
+      0.5845011472702026,
+      0.6117224097251892,
+      0.7704946398735046,
+      0.39940908551216125,
+      0.5606845617294312,
+      0.5191893577575684,
+      0.6362971067428589,
+      0.7313826680183411,
+      0.6495254635810852,
+      0.7353050112724304,
+      0.6281499266624451,
+      0.7984930872917175,
+      0.442146360874176,
+      0.5063959956169128
+    ],
+    "skor_dev_ood": [
+      0.2910503149032593,
+      0.43793249130249023,
+      0.2160348743200302,
+      0.4994300305843353,
+      0.22127887606620789,
+      0.43273353576660156,
+      0.28608813881874084,
+      0.4286583662033081,
+      0.18970739841461182,
+      0.4441969692707062,
+      0.2713049054145813,
+      0.4327687919139862
+    ]
+  },
+  "konfigurasi_terpilih": {
+    "model_name": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "chunk_words": 40,
+    "overlap_words": 8,
+    "threshold": 0.4688519686460495
+  },
+  "ingestion": {
+    "jumlah_dokumen": 18,
+    "dokumen": [
+      {
+        "doc_id": "SOP-01",
+        "judul": "SOP Penerimaan Barang Masuk (Inbound)",
+        "format": ".md",
+        "kata_mentah": 444,
+        "kata_bersih": 444,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-02",
+        "judul": "SOP Put-Away dan Slotting Barang",
+        "format": ".md",
+        "kata_mentah": 431,
+        "kata_bersih": 431,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-03",
+        "judul": "SOP Picking dan Packing Pesanan",
+        "format": ".txt",
+        "kata_mentah": 428,
+        "kata_bersih": 416,
+        "baris_boilerplate_dibuang": 2,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-04",
+        "judul": "SOP Pengiriman Keluar dan Serah Terima Kurir",
+        "format": ".md",
+        "kata_mentah": 401,
+        "kata_bersih": 401,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-05",
+        "judul": "SOP Penyimpanan Rantai Dingin (Cold Storage)",
+        "format": ".pdf",
+        "kata_mentah": 483,
+        "kata_bersih": 455,
+        "baris_boilerplate_dibuang": 6,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 2
+      },
+      {
+        "doc_id": "SOP-06",
+        "judul": "SOP FEFO dan Pengendalian Barang Kedaluwarsa",
+        "format": ".md",
+        "kata_mentah": 404,
+        "kata_bersih": 404,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-07",
+        "judul": "SOP Penanganan Barang Fragile dan Oversize",
+        "format": ".md",
+        "kata_mentah": 418,
+        "kata_bersih": 418,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-08",
+        "judul": "SOP Stock Opname dan Penyelesaian Selisih Stok",
+        "format": ".txt",
+        "kata_mentah": 415,
+        "kata_bersih": 403,
+        "baris_boilerplate_dibuang": 2,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-09",
+        "judul": "SOP Retur Barang dan Zona Karantina",
+        "format": ".md",
+        "kata_mentah": 425,
+        "kata_bersih": 425,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "SOP-10",
+        "judul": "SOP Pengoperasian Forklift dan AGV",
+        "format": ".pdf",
+        "kata_mentah": 467,
+        "kata_bersih": 439,
+        "baris_boilerplate_dibuang": 6,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 2
+      },
+      {
+        "doc_id": "SOP-11",
+        "judul": "SOP Tanggap Darurat Kebakaran dan Evakuasi",
+        "format": ".md",
+        "kata_mentah": 442,
+        "kata_bersih": 442,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "KEB-01",
+        "judul": "Kebijakan Penjadwalan Shift dan Waktu Kerja",
+        "format": ".pdf",
+        "kata_mentah": 465,
+        "kata_bersih": 437,
+        "baris_boilerplate_dibuang": 6,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 2
+      },
+      {
+        "doc_id": "KEB-02",
+        "judul": "Kebijakan Lembur, Cuti, dan Tukar Shift",
+        "format": ".md",
+        "kata_mentah": 411,
+        "kata_bersih": 411,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "KEB-03",
+        "judul": "Kebijakan Keselamatan, Kesehatan Kerja, dan APD",
+        "format": ".md",
+        "kata_mentah": 448,
+        "kata_bersih": 448,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 5,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "KEB-04",
+        "judul": "Kebijakan Keamanan Akses Gudang dan Data WMS",
+        "format": ".txt",
+        "kata_mentah": 445,
+        "kata_bersih": 433,
+        "baris_boilerplate_dibuang": 2,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "KEB-05",
+        "judul": "Kebijakan Mutu Layanan dan Indikator Kinerja Gudang",
+        "format": ".md",
+        "kata_mentah": 410,
+        "kata_bersih": 410,
+        "baris_boilerplate_dibuang": 0,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "MAN-01",
+        "judul": "Manual Penggunaan WMS dan Perangkat Genggam",
+        "format": ".txt",
+        "kata_mentah": 472,
+        "kata_bersih": 460,
+        "baris_boilerplate_dibuang": 2,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 1
+      },
+      {
+        "doc_id": "REG-01",
+        "judul": "Ringkasan Regulasi Ketenagakerjaan dan K3 untuk Operasi Gudang",
+        "format": ".pdf",
+        "kata_mentah": 473,
+        "kata_bersih": 445,
+        "baris_boilerplate_dibuang": 6,
+        "jumlah_bab": 4,
+        "jumlah_halaman": 2
+      }
+    ],
+    "statistik_chunk": {
+      "jumlah_chunk": 245,
+      "kata_rata2": 30.526530612244898,
+      "kata_min": 6,
+      "kata_maks": 40,
+      "token_rata2": 69.85306122448979,
+      "token_p95": 89.0,
+      "token_maks": 99,
+      "token_per_kata": 2.2882738334001873,
+      "pct_terpotong_model": 0.0,
+      "pct_akhir_kalimat_utuh": 100.0
+    },
+    "jumlah_vektor_chromadb": 245,
+    "dimensi": 768,
+    "detik_encode": 56.876416800005245,
+    "detik_tulis_chromadb": 1.0057096000018646,
+    "field_metadata": [
+      "doc_id",
+      "judul",
+      "jenis",
+      "kategori",
+      "departemen",
+      "pemilik",
+      "versi",
+      "tanggal_berlaku",
+      "tahun_berlaku",
+      "level_akses",
+      "file_sumber",
+      "format_sumber",
+      "bab",
+      "bab_index",
+      "chunk_index",
+      "total_chunk_dokumen",
+      "n_kata",
+      "n_kata_overlap",
+      "n_token",
+      "rak_terkait",
+      "kata_kunci"
+    ],
+    "pct_metadata_lengkap": 100.0
+  },
+  "evaluasi_test": {
+    "ringkasan_per_mode": {
+      "vector": {
+        "literal": {
+          "n": 4,
+          "hit_at_1": 0.75,
+          "hit_at_1_ci95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ],
+          "hit_at_3": 0.75,
+          "hit_at_5": 0.75,
+          "mrr": 0.7777777777777778,
+          "answer_at_3": 0.75
+        },
+        "sinonim": {
+          "n": 12,
+          "hit_at_1": 0.4166666666666667,
+          "hit_at_1_ci95": [
+            0.19325746190524656,
+            0.6804926643446272
+          ],
+          "hit_at_3": 0.9166666666666666,
+          "hit_at_5": 0.9166666666666666,
+          "mrr": 0.6527777777777778,
+          "answer_at_3": 0.4166666666666667
+        },
+        "ambigu": {
+          "n": 5,
+          "hit_at_1": 0.8,
+          "hit_at_1_ci95": [
+            0.3755282641185388,
+            0.9637768390302125
+          ],
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 0.9,
+          "answer_at_3": 0.8
+        },
+        "semua_domain": {
+          "n": 21,
+          "hit_at_1": 0.5714285714285714,
+          "hit_at_1_ci95": [
+            0.3654621629703244,
+            0.7553030051347894
+          ],
+          "hit_at_3": 0.9047619047619048,
+          "hit_at_5": 0.9047619047619048,
+          "mrr": 0.7354497354497355,
+          "answer_at_3": 0.5714285714285714
+        }
+      },
+      "bm25": {
+        "literal": {
+          "n": 4,
+          "hit_at_1": 1.0,
+          "hit_at_1_ci95": [
+            0.5100999795960008,
+            1.0
+          ],
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 1.0,
+          "answer_at_3": 1.0
+        },
+        "sinonim": {
+          "n": 12,
+          "hit_at_1": 0.5,
+          "hit_at_1_ci95": [
+            0.2537781703934222,
+            0.7462218296065778
+          ],
+          "hit_at_3": 0.75,
+          "hit_at_5": 0.75,
+          "mrr": 0.6488095238095238,
+          "answer_at_3": 0.3333333333333333
+        },
+        "ambigu": {
+          "n": 5,
+          "hit_at_1": 1.0,
+          "hit_at_1_ci95": [
+            0.5655085052479191,
+            1.0
+          ],
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 1.0,
+          "answer_at_3": 1.0
+        },
+        "semua_domain": {
+          "n": 21,
+          "hit_at_1": 0.7142857142857143,
+          "hit_at_1_ci95": [
+            0.500432261771624,
+            0.8618632425437179
+          ],
+          "hit_at_3": 0.8571428571428571,
+          "hit_at_5": 0.8571428571428571,
+          "mrr": 0.7993197278911565,
+          "answer_at_3": 0.6190476190476191
+        }
+      },
+      "hybrid": {
+        "literal": {
+          "n": 4,
+          "hit_at_1": 0.75,
+          "hit_at_1_ci95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ],
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 0.8333333333333334,
+          "answer_at_3": 0.75
+        },
+        "sinonim": {
+          "n": 12,
+          "hit_at_1": 0.5,
+          "hit_at_1_ci95": [
+            0.2537781703934222,
+            0.7462218296065778
+          ],
+          "hit_at_3": 0.9166666666666666,
+          "hit_at_5": 0.9166666666666666,
+          "mrr": 0.71875,
+          "answer_at_3": 0.4166666666666667
+        },
+        "ambigu": {
+          "n": 5,
+          "hit_at_1": 1.0,
+          "hit_at_1_ci95": [
+            0.5655085052479191,
+            1.0
+          ],
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 1.0,
+          "answer_at_3": 1.0
+        },
+        "semua_domain": {
+          "n": 21,
+          "hit_at_1": 0.6666666666666666,
+          "hit_at_1_ci95": [
+            0.45373075657210293,
+            0.8280546356731631
+          ],
+          "hit_at_3": 0.9523809523809523,
+          "hit_at_5": 0.9523809523809523,
+          "mrr": 0.8075396825396824,
+          "answer_at_3": 0.6190476190476191
+        }
+      }
+    },
+    "penolakan_ood": {
+      "threshold": 0.4688519686460495,
+      "tp": 8,
+      "fp": 5,
+      "fn": 4,
+      "tn": 16,
+      "precision": 0.6153846153846154,
+      "recall": 0.6666666666666666,
+      "f1": 0.64,
+      "false_reject_rate": 0.23809523809523808,
+      "precision_ci95": [
+        0.35522480972268555,
+        0.8229055341876319
+      ],
+      "recall_ci95": [
+        0.3906175873976139,
+        0.8618821601026385
+      ],
+      "auc": 0.7817460317460317,
+      "per_jenis_ood": {
+        "jauh": {
+          "n": 6,
+          "ditolak": 6
+        },
+        "dekat": {
+          "n": 6,
+          "ditolak": 2
+        }
+      }
+    },
+    "kurva_ambang": [
+      {
+        "threshold": 0.1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 12,
+        "tn": 21,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.0,
+          0.0
+        ],
+        "recall_ci95": [
+          0.0,
+          0.2425007574992425
+        ]
+      },
+      {
+        "threshold": 0.15,
+        "tp": 2,
+        "fp": 0,
+        "fn": 10,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci95": [
+          0.04696414761482223,
+          0.44803635738467273
+        ]
+      },
+      {
+        "threshold": 0.2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 10,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci95": [
+          0.04696414761482223,
+          0.44803635738467273
+        ]
+      },
+      {
+        "threshold": 0.25,
+        "tp": 3,
+        "fp": 0,
+        "fn": 9,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci95": [
+          0.08894003962896138,
+          0.53231033912066
+        ]
+      },
+      {
+        "threshold": 0.3,
+        "tp": 4,
+        "fp": 0,
+        "fn": 8,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci95": [
+          0.13811783989736134,
+          0.609382412602386
+        ]
+      },
+      {
+        "threshold": 0.35,
+        "tp": 6,
+        "fp": 0,
+        "fn": 6,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "false_reject_rate": 0.0,
+        "precision_ci95": [
+          0.6096569663469354,
+          0.9999999999999999
+        ],
+        "recall_ci95": [
+          0.2537781703934222,
+          0.7462218296065778
+        ]
+      },
+      {
+        "threshold": 0.4,
+        "tp": 6,
+        "fp": 3,
+        "fn": 6,
+        "tn": 18,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285715,
+        "false_reject_rate": 0.14285714285714285,
+        "precision_ci95": [
+          0.35419734749908977,
+          0.879418401317257
+        ],
+        "recall_ci95": [
+          0.2537781703934222,
+          0.7462218296065778
+        ]
+      },
+      {
+        "threshold": 0.45,
+        "tp": 8,
+        "fp": 4,
+        "fn": 4,
+        "tn": 17,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "false_reject_rate": 0.19047619047619047,
+        "precision_ci95": [
+          0.3906175873976139,
+          0.8618821601026385
+        ],
+        "recall_ci95": [
+          0.3906175873976139,
+          0.8618821601026385
+        ]
+      },
+      {
+        "threshold": 0.5,
+        "tp": 8,
+        "fp": 6,
+        "fn": 4,
+        "tn": 15,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "false_reject_rate": 0.2857142857142857,
+        "precision_ci95": [
+          0.3259026690286936,
+          0.7861949006959948
+        ],
+        "recall_ci95": [
+          0.3906175873976139,
+          0.8618821601026385
+        ]
+      },
+      {
+        "threshold": 0.55,
+        "tp": 9,
+        "fp": 10,
+        "fn": 3,
+        "tn": 11,
+        "precision": 0.47368421052631576,
+        "recall": 0.75,
+        "f1": 0.5806451612903226,
+        "false_reject_rate": 0.47619047619047616,
+        "precision_ci95": [
+          0.27329505487448547,
+          0.6829251748817489
+        ],
+        "recall_ci95": [
+          0.46768966087934005,
+          0.9110599603710386
+        ]
+      },
+      {
+        "threshold": 0.6,
+        "tp": 11,
+        "fp": 11,
+        "fn": 1,
+        "tn": 10,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118,
+        "false_reject_rate": 0.5238095238095238,
+        "precision_ci95": [
+          0.3072180469247956,
+          0.6927819530752044
+        ],
+        "recall_ci95": [
+          0.6461140782014047,
+          0.9851352905492264
+        ]
+      },
+      {
+        "threshold": 0.65,
+        "tp": 11,
+        "fp": 12,
+        "fn": 1,
+        "tn": 9,
+        "precision": 0.4782608695652174,
+        "recall": 0.9166666666666666,
+        "f1": 0.6285714285714286,
+        "false_reject_rate": 0.5714285714285714,
+        "precision_ci95": [
+          0.2923686953994572,
+          0.6703757013578151
+        ],
+        "recall_ci95": [
+          0.6461140782014047,
+          0.9851352905492264
+        ]
+      },
+      {
+        "threshold": 0.7,
+        "tp": 12,
+        "fp": 19,
+        "fn": 0,
+        "tn": 2,
+        "precision": 0.3870967741935484,
+        "recall": 1.0,
+        "f1": 0.5581395348837209,
+        "false_reject_rate": 0.9047619047619048,
+        "precision_ci95": [
+          0.23732875351271562,
+          0.5617619885886803
+        ],
+        "recall_ci95": [
+          0.7574992425007574,
+          1.0
+        ]
+      },
+      {
+        "threshold": 0.75,
+        "tp": 12,
+        "fp": 20,
+        "fn": 0,
+        "tn": 1,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "false_reject_rate": 0.9523809523809523,
+        "precision_ci95": [
+          0.2293366846595921,
+          0.5474589941047487
+        ],
+        "recall_ci95": [
+          0.7574992425007574,
+          1.0
+        ]
+      },
+      {
+        "threshold": 0.8,
+        "tp": 12,
+        "fp": 21,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "false_reject_rate": 1.0,
+        "precision_ci95": [
+          0.22186966167959873,
+          0.5338412737846591
+        ],
+        "recall_ci95": [
+          0.7574992425007574,
+          1.0
+        ]
+      },
+      {
+        "threshold": 0.85,
+        "tp": 12,
+        "fp": 21,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "false_reject_rate": 1.0,
+        "precision_ci95": [
+          0.22186966167959873,
+          0.5338412737846591
+        ],
+        "recall_ci95": [
+          0.7574992425007574,
+          1.0
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "tp": 12,
+        "fp": 21,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "false_reject_rate": 1.0,
+        "precision_ci95": [
+          0.22186966167959873,
+          0.5338412737846591
+        ],
+        "recall_ci95": [
+          0.7574992425007574,
+          1.0
+        ]
+      }
+    ],
+    "sukses_end_to_end": 0.42857142857142855,
+    "statistik_cosine": {
+      "literal": {
+        "n": 4,
+        "rata2": 0.6212706863880157,
+        "min": 0.39556950330734253,
+        "median": 0.667639970779419,
+        "maks": 0.7542333006858826
+      },
+      "sinonim": {
+        "n": 12,
+        "rata2": 0.584889809290568,
+        "min": 0.3578447699546814,
+        "median": 0.595382422208786,
+        "maks": 0.7127035856246948
+      },
+      "ambigu": {
+        "n": 5,
+        "rata2": 0.4833462119102478,
+        "min": 0.37797629833221436,
+        "median": 0.46420353651046753,
+        "maks": 0.6553981304168701
+      },
+      "ood": {
+        "n": 12,
+        "rata2": 0.3888363093137741,
+        "min": 0.11207276582717896,
+        "median": 0.38831764459609985,
+        "maks": 0.6667259931564331
+      }
+    },
+    "selisih_top_dokumen": {
+      "ambigu": 0.037036430835723874,
+      "spesifik": 0.08236374333500862
+    },
+    "cakupan_target_ambigu": 2.4,
+    "kemiripan_leksikal_rata2": {
+      "literal": 0.8041666666666667,
+      "sinonim": 0.3789021164021163,
+      "ambigu": 0.8333333333333333
+    },
+    "latensi_ms": {
+      "vector": 9.157800006505568,
+      "bm25": 9.269099995435681,
+      "hybrid": 9.531100004096515
+    },
+    "per_kueri": [
+      {
+        "id": "LIT-02",
+        "tipe": "literal",
+        "kueri": "Apa arti kode kesalahan E-305?",
+        "target_docs": [
+          "MAN-01"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "MAN-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Kode Kesalahan. E-101 berarti lokasi tidak cocok dengan daftar tugas; periksa kembali label rak. E-102 berarti SKU berbeda dengan pesanan. E-203 berarti stok ti"
+        },
+        "cos_top1": 0.7542333006858826,
+        "cos_top2_dokumen_lain": 0.38614946603775024,
+        "ditolak": false,
+        "dokumen_top5": [
+          "MAN-01",
+          "SOP-09",
+          "SOP-08",
+          "SOP-04",
+          "KEB-04"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "MAN-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Kode Kesalahan. E-101 berarti lokasi tidak cocok dengan daftar tugas; periksa kembali label rak. E-102 berarti SKU berbeda dengan pesanan. E-203 berarti stok ti"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "MAN-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Kode Kesalahan. E-101 berarti lokasi tidak cocok dengan daftar tugas; periksa kembali label rak. E-102 berarti SKU berbeda dengan pesanan. E-203 berarti stok ti"
+        },
+        "kemiripan_leksikal": 0.75
+      },
+      {
+        "id": "LIT-04",
+        "tipe": "literal",
+        "kueri": "Seberapa sering cycle count kelas A dilakukan?",
+        "target_docs": [
+          "SOP-08"
+        ],
+        "vector": {
+          "rank": 9,
+          "rr": 0.1111111111111111,
+          "answer_rank": 0,
+          "top_doc": "SOP-04",
+          "targets_in_top5": 0,
+          "cuplikan": "Contoh lain, pengemudi hanya menghitung 48 koli padahal manifes menyatakan 50 koli. Kedua pihak menghitung ulang dengan pemindaian, dan dua koli yang tertinggal"
+        },
+        "cos_top1": 0.39556950330734253,
+        "cos_top2_dokumen_lain": 0.39389824867248535,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-04",
+          "KEB-03",
+          "REG-01",
+          "MAN-01",
+          "KEB-05"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-08",
+          "targets_in_top5": 1,
+          "cuplikan": "Pada stock opname menyeluruh kegiatan penerimaan dan pengiriman dihentikan selama penghitungan. Frekuensi Cycle Count. SKU dibagi menurut analisis ABC berdasark"
+        },
+        "hybrid": {
+          "rank": 3,
+          "rr": 0.3333333333333333,
+          "answer_rank": 6,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 1,
+          "cuplikan": "Kesehatan. Pemeriksaan kesehatan berkala dilakukan setahun sekali. Petugas ruang dingin dan operator forklift diperiksa sebelum penempatan. Karyawan dilarang be"
+        },
+        "kemiripan_leksikal": 0.6666666666666666
+      },
+      {
+        "id": "LIT-06",
+        "tipe": "literal",
+        "kueri": "Di mana titik kumpul evakuasi?",
+        "target_docs": [
+          "SOP-11"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Evakuasi. Saat sirene berbunyi, hentikan pekerjaan dan parkirkan forklift dengan garpu turun. Keluar melalui jalur berpanah hijau menuju titik kumpul di lapanga"
+        },
+        "cos_top1": 0.6706781387329102,
+        "cos_top2_dokumen_lain": 0.49009251594543457,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-11",
+          "SOP-04",
+          "KEB-03",
+          "SOP-02",
+          "SOP-10"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Evakuasi. Saat sirene berbunyi, hentikan pekerjaan dan parkirkan forklift dengan garpu turun. Keluar melalui jalur berpanah hijau menuju titik kumpul di lapanga"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Evakuasi. Saat sirene berbunyi, hentikan pekerjaan dan parkirkan forklift dengan garpu turun. Keluar melalui jalur berpanah hijau menuju titik kumpul di lapanga"
+        },
+        "kemiripan_leksikal": 1.0
+      },
+      {
+        "id": "LIT-08",
+        "tipe": "literal",
+        "kueri": "Berapa panjang minimal kata sandi WMS?",
+        "target_docs": [
+          "KEB-04"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Data master SKU hanya oleh Admin Gudang. Hak akses ditinjau setiap tiga bulan dan dicabut pada hari terakhir karyawan bekerja. Kata Sandi. Kata sandi minimal 12"
+        },
+        "cos_top1": 0.6646018028259277,
+        "cos_top2_dokumen_lain": 0.5652793645858765,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-04",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Data master SKU hanya oleh Admin Gudang. Hak akses ditinjau setiap tiga bulan dan dicabut pada hari terakhir karyawan bekerja. Kata Sandi. Kata sandi minimal 12"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Data master SKU hanya oleh Admin Gudang. Hak akses ditinjau setiap tiga bulan dan dicabut pada hari terakhir karyawan bekerja. Kata Sandi. Kata sandi minimal 12"
+        },
+        "kemiripan_leksikal": 0.8
+      },
+      {
+        "id": "SIN-02",
+        "tipe": "sinonim",
+        "kueri": "Apa yang harus disiapkan bila aliran listrik ke mesin pendingin tiba-tiba mati?",
+        "target_docs": [
+          "SOP-05"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-05",
+          "targets_in_top5": 1,
+          "cuplikan": "Gangguan Listrik. Unit cadangan dan genset harus aktif dalam 10 menit setelah listrik padam. Pintu ruang dingin ditutup rapat selama pemadaman. Genset diuji beb"
+        },
+        "cos_top1": 0.6807982325553894,
+        "cos_top2_dokumen_lain": 0.5701483488082886,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-05",
+          "SOP-11",
+          "MAN-01",
+          "SOP-10"
+        ],
+        "bm25": {
+          "rank": 3,
+          "rr": 0.3333333333333333,
+          "answer_rank": 3,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Sebagai contoh, baterai forklift mengeluarkan asap di stasiun pengisian. Petugas memutus aliran listrik dari panel bila aman, menekan alarm, dan memakai APAR je"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-05",
+          "targets_in_top5": 1,
+          "cuplikan": "Gangguan Listrik. Unit cadangan dan genset harus aktif dalam 10 menit setelah listrik padam. Pintu ruang dingin ditutup rapat selama pemadaman. Genset diuji beb"
+        },
+        "kemiripan_leksikal": 0.42857142857142855
+      },
+      {
+        "id": "SIN-04",
+        "tipe": "sinonim",
+        "kueri": "Makanan yang sudah lewat tanggal, bolehkah diberikan kepada pegawai?",
+        "target_docs": [
+          "SOP-06"
+        ],
+        "vector": {
+          "rank": 3,
+          "rr": 0.3333333333333333,
+          "answer_rank": 0,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Produk pangan dengan sisa masa simpan kurang dari 30 persen ditolak kecuali disetujui Kepala Gudang."
+        },
+        "cos_top1": 0.6608418822288513,
+        "cos_top2_dokumen_lain": 0.6502975225448608,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-01",
+          "SOP-09",
+          "SOP-06",
+          "SOP-04",
+          "KEB-01"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-06",
+          "targets_in_top5": 1,
+          "cuplikan": "Barang tanpa tanggal kedaluwarsa memakai First In First Out menurut tanggal penerimaan. Pencatatan Lot. Tanggal kedaluwarsa dan nomor lot wajib dimasukkan ke WM"
+        },
+        "hybrid": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 0,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 1,
+          "cuplikan": "Retur ke Pemasok. Barang Grade C dikirim ke pemasok paling lama 30 hari sejak grading, disertai Nota Retur Pemasok. Bila batas ini lewat tanpa kesepakatan, Kepa"
+        },
+        "kemiripan_leksikal": 0.2857142857142857
+      },
+      {
+        "id": "SIN-06",
+        "tipe": "sinonim",
+        "kueri": "Kalau jumlah barang di komputer beda dengan yang ada di rak, siapa yang boleh mengoreksi?",
+        "target_docs": [
+          "SOP-08"
+        ],
+        "vector": {
+          "rank": 6,
+          "rr": 0.16666666666666666,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Jika rak penuh, operator meminta rekomendasi lokasi alternatif dan dilarang meletakkan barang di lorong. Batas Kapasitas. Rak dianggap penuh pada okupansi 95 pe"
+        },
+        "cos_top1": 0.5001185536384583,
+        "cos_top2_dokumen_lain": 0.4791240692138672,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-02",
+          "SOP-09",
+          "SOP-03",
+          "SOP-04",
+          "KEB-05"
+        ],
+        "bm25": {
+          "rank": 6,
+          "rr": 0.16666666666666666,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Pelaksanaan Penyimpanan. Operator memindai label koli, berjalan ke lokasi yang disarankan, memindai label rak, lalu mengonfirmasi jumlah. WMS mengubah status st"
+        },
+        "hybrid": {
+          "rank": 8,
+          "rr": 0.125,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Pelaksanaan Penyimpanan. Operator memindai label koli, berjalan ke lokasi yang disarankan, memindai label rak, lalu mengonfirmasi jumlah. WMS mengubah status st"
+        },
+        "kemiripan_leksikal": 0.5714285714285714
+      },
+      {
+        "id": "SIN-08",
+        "tipe": "sinonim",
+        "kueri": "Apakah saya boleh menyetir mesin pengangkat palet tanpa sertifikat?",
+        "target_docs": [
+          "SOP-10"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 1,
+          "cuplikan": "Mengemudikan forklift tanpa lisensi merupakan pelanggaran berat. Pemeriksaan Sebelum Pakai. Pada awal setiap shift operator mengisi daftar periksa: rem, klakson"
+        },
+        "cos_top1": 0.5624789595603943,
+        "cos_top2_dokumen_lain": 0.46097898483276367,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-10",
+          "REG-01",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 14,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 1,
+          "cuplikan": "Barang Oversize. Barang oversize adalah barang dengan berat di atas 20 kg atau sisi terpanjang di atas 120 cm, misalnya kulkas, mesin cuci, kasur busa, dan rak "
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 1,
+          "cuplikan": "Mengemudikan forklift tanpa lisensi merupakan pelanggaran berat. Pemeriksaan Sebelum Pakai. Pada awal setiap shift operator mengisi daftar periksa: rem, klakson"
+        },
+        "kemiripan_leksikal": 0.3333333333333333
+      },
+      {
+        "id": "SIN-10",
+        "tipe": "sinonim",
+        "kueri": "Apa yang dikerjakan pertama kali ketika melihat kobaran api di lorong?",
+        "target_docs": [
+          "SOP-11"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 3,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Air tidak digunakan. Contoh lain, saat pemadaman disertai sirene pada shift Malam, petugas yang berada di ruang beku keluar lewat pintu darurat yang dapat dibuk"
+        },
+        "cos_top1": 0.3578447699546814,
+        "cos_top2_dokumen_lain": 0.2548104524612427,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-11",
+          "KEB-03",
+          "SOP-05",
+          "SOP-07"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 2,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Tim Tanggap Darurat. Setiap shift wajib memiliki minimal empat anggota tim tanggap darurat: koordinator, pemadam, pertolongan pertama, dan penyapu evakuasi. Sup"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 1,
+          "cuplikan": "Saat Melihat Api. Tekan alarm manual terdekat dan laporkan lokasi kepada koordinator. Gunakan APAR hanya bila api kecil dan jalur keluar aman, dengan teknik tar"
+        },
+        "kemiripan_leksikal": 0.625
+      },
+      {
+        "id": "SIN-12",
+        "tipe": "sinonim",
+        "kueri": "Berapa bayaran tambahan untuk bekerja melebihi jam normal?",
+        "target_docs": [
+          "KEB-02"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 6,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 1,
+          "cuplikan": "Bila ia lembur dua jam pada hari kerja, upahnya Rp30.000 untuk jam pertama dan Rp40.000 untuk jam kedua, sehingga totalnya Rp70.000. Contoh lain, karyawan yang "
+        },
+        "cos_top1": 0.7127035856246948,
+        "cos_top2_dokumen_lain": 0.6530311107635498,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-02",
+          "KEB-01",
+          "REG-01"
+        ],
+        "bm25": {
+          "rank": 7,
+          "rr": 0.14285714285714285,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Sebagai contoh, smartphone termasuk fragile tetapi perputarannya cepat, sehingga diletakkan pada R09 dengan pelindung tambahan agar dekat dengan jalur kirim. Ku"
+        },
+        "hybrid": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 11,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Total jam kerja biasa tidak boleh melebihi 40 jam per minggu. Staf yang cuti atau berhalangan tidak boleh dijadwalkan pada hari tersebut. Kuota Shift. Setiap sh"
+        },
+        "kemiripan_leksikal": 0.3333333333333333
+      },
+      {
+        "id": "SIN-14",
+        "tipe": "sinonim",
+        "kueri": "Berapa lama gambar dari kamera pengawas disimpan?",
+        "target_docs": [
+          "KEB-04"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "CCTV. Kamera memantau dock, lorong, dan ruang bernilai tinggi selama 24 jam. Rekaman disimpan selama 90 hari. Hanya Kepala Gudang dan tim keamanan yang boleh me"
+        },
+        "cos_top1": 0.5372888445854187,
+        "cos_top2_dokumen_lain": 0.37119925022125244,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-04",
+          "SOP-02",
+          "KEB-05",
+          "SOP-07",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "CCTV. Kamera memantau dock, lorong, dan ruang bernilai tinggi selama 24 jam. Rekaman disimpan selama 90 hari. Hanya Kepala Gudang dan tim keamanan yang boleh me"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "CCTV. Kamera memantau dock, lorong, dan ruang bernilai tinggi selama 24 jam. Rekaman disimpan selama 90 hari. Hanya Kepala Gudang dan tim keamanan yang boleh me"
+        },
+        "kemiripan_leksikal": 0.4
+      },
+      {
+        "id": "SIN-16",
+        "tipe": "sinonim",
+        "kueri": "Alat pemindai kehilangan sinyal internet, bagaimana nasib data yang sudah discan?",
+        "target_docs": [
+          "MAN-01"
+        ],
+        "vector": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 2,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Label pengiriman bekas dihancurkan. Insiden Keamanan. Dugaan pencurian atau kebocoran data dilaporkan kepada Kepala Gudang dan tim TI paling lambat 24 jam. Bukt"
+        },
+        "cos_top1": 0.5461323857307434,
+        "cos_top2_dokumen_lain": 0.5127151012420654,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-04",
+          "MAN-01",
+          "SOP-02",
+          "SOP-04"
+        ],
+        "bm25": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 0,
+          "top_doc": "SOP-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Klaim Kehilangan. Kehilangan atau kerusakan selama pengantaran menjadi tanggung jawab kurir sesuai kontrak. Admin Gudang mengajukan klaim dalam 3 hari kerja set"
+        },
+        "hybrid": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 7,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Data Pribadi. Nama, alamat, dan nomor telepon pelanggan hanya dipakai untuk pengiriman. Dilarang menyalin data pelanggan ke perangkat pribadi atau aplikasi pesa"
+        },
+        "kemiripan_leksikal": 0.25
+      },
+      {
+        "id": "SIN-18",
+        "tipe": "sinonim",
+        "kueri": "Truk penyuplai datang tanpa janji terlebih dulu, apa yang terjadi?",
+        "target_docs": [
+          "SOP-01"
+        ],
+        "vector": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 14,
+          "top_doc": "SOP-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Sebagai contoh, kurir ekspres terlambat 40 menit sehingga paket belum dijemput. Koordinator mencatat keterlambatan di WMS sebagai bahan evaluasi mitra dan memin"
+        },
+        "cos_top1": 0.4917891025543213,
+        "cos_top2_dokumen_lain": 0.4864889979362488,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-04",
+          "SOP-01",
+          "KEB-03",
+          "SOP-10",
+          "SOP-09"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Penjadwalan Kedatangan. Pemasok wajib memesan slot bongkar melalui Admin Gudang paling lambat 24 jam sebelum kedatangan. Slot bongkar tersedia pukul 07.00 sampa"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 3,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Penolakan Barang. Barang yang rusak, basah, salah jenis, atau melewati batas mutu dicatat pada Berita Acara Penolakan, difoto, lalu dikembalikan bersama truk ya"
+        },
+        "kemiripan_leksikal": 0.375
+      },
+      {
+        "id": "SIN-20",
+        "tipe": "sinonim",
+        "kueri": "Bagaimana membungkus benda dari kaca supaya aman saat dikirim?",
+        "target_docs": [
+          "SOP-03"
+        ],
+        "vector": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 4,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 1,
+          "cuplikan": "Smart TV 55 inci harus dibawa dalam posisi tegak dan tidak boleh diletakkan mendatar. Saat memindahkan gelas kristal, petugas memastikan kardus tidak bergeser d"
+        },
+        "cos_top1": 0.6282858848571777,
+        "cos_top2_dokumen_lain": 0.599342942237854,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-07",
+          "SOP-03",
+          "SOP-04",
+          "KEB-03",
+          "SOP-02"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-03",
+          "targets_in_top5": 1,
+          "cuplikan": "Prosedur ini menjamin pesanan pelanggan diambil dengan benar, dikemas aman, dan siap dikirim sesuai batas waktu layanan. Pembentukan Gelombang Pesanan. WMS meng"
+        },
+        "hybrid": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 6,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 1,
+          "cuplikan": "Cara Memindahkan Barang Fragile. Gunakan troli beralas busa. Jangan memakai forklift untuk satu koli kaca tanpa palet. Barang kaca dibawa dalam posisi tegak men"
+        },
+        "kemiripan_leksikal": 0.3333333333333333
+      },
+      {
+        "id": "SIN-22",
+        "tipe": "sinonim",
+        "kueri": "Peraturan pemerintah mana yang membatasi kerja tambahan karyawan?",
+        "target_docs": [
+          "REG-01"
+        ],
+        "vector": {
+          "rank": 3,
+          "rr": 0.3333333333333333,
+          "answer_rank": 0,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Contoh lain, staf yang telah bekerja lima shift dalam seminggu telah mencapai 40 jam, sehingga shift keenam hanya dapat dilakukan sebagai lembur dengan persetuj"
+        },
+        "cos_top1": 0.6753336787223816,
+        "cos_top2_dokumen_lain": 0.6545904874801636,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-01",
+          "KEB-02",
+          "REG-01"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 0,
+          "top_doc": "REG-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Dasar Waktu Kerja. Undang-Undang Nomor 13 Tahun 2003 tentang Ketenagakerjaan sebagaimana diubah melalui Undang-Undang Nomor 6 Tahun 2023 tentang Cipta Kerja, se"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 0,
+          "top_doc": "REG-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Dasar Waktu Kerja. Undang-Undang Nomor 13 Tahun 2003 tentang Ketenagakerjaan sebagaimana diubah melalui Undang-Undang Nomor 6 Tahun 2023 tentang Cipta Kerja, se"
+        },
+        "kemiripan_leksikal": 0.5
+      },
+      {
+        "id": "SIN-24",
+        "tipe": "sinonim",
+        "kueri": "How many overtime hours can an employee work per week?",
+        "target_docs": [
+          "KEB-02",
+          "REG-01"
+        ],
+        "vector": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 9,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 2,
+          "cuplikan": "Contoh lain, staf yang telah bekerja lima shift dalam seminggu telah mencapai 40 jam, sehingga shift keenam hanya dapat dilakukan sebagai lembur dengan persetuj"
+        },
+        "cos_top1": 0.6650618314743042,
+        "cos_top2_dokumen_lain": 0.6577937006950378,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-01",
+          "KEB-02",
+          "REG-01"
+        ],
+        "bm25": {
+          "rank": 7,
+          "rr": 0.14285714285714285,
+          "answer_rank": 0,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 0,
+          "cuplikan": "Aturan Berkendara. Batas kecepatan di dalam gudang 8 km per jam dan 5 km per jam di persimpangan lorong. Garpu dibawa setinggi 15 sampai 20 cm di atas lantai. B"
+        },
+        "hybrid": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 17,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 1,
+          "cuplikan": "Total jam kerja biasa tidak boleh melebihi 40 jam per minggu. Staf yang cuti atau berhalangan tidak boleh dijadwalkan pada hari tersebut. Kuota Shift. Setiap sh"
+        },
+        "kemiripan_leksikal": 0.1111111111111111
+      },
+      {
+        "id": "AMB-02",
+        "tipe": "ambigu",
+        "kueri": "Bagaimana penanganan barang rusak?",
+        "target_docs": [
+          "SOP-07",
+          "SOP-09",
+          "SOP-01"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 3,
+          "cuplikan": "Barang Pecah atau Rusak. Pecahan kaca dibersihkan dengan sapu dan pengki, tidak boleh dengan tangan kosong. Area ditandai kerucut peringatan sampai bersih. Bara"
+        },
+        "cos_top1": 0.6553981304168701,
+        "cos_top2_dokumen_lain": 0.5675736665725708,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-07",
+          "SOP-09",
+          "SOP-01",
+          "SOP-06",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 3,
+          "cuplikan": "Barang Pecah atau Rusak. Pecahan kaca dibersihkan dengan sapu dan pengki, tidak boleh dengan tangan kosong. Area ditandai kerucut peringatan sampai bersih. Bara"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 3,
+          "cuplikan": "Barang Pecah atau Rusak. Pecahan kaca dibersihkan dengan sapu dan pengki, tidak boleh dengan tangan kosong. Area ditandai kerucut peringatan sampai bersih. Bara"
+        },
+        "kemiripan_leksikal": 1.0
+      },
+      {
+        "id": "AMB-04",
+        "tipe": "ambigu",
+        "kueri": "Siapa yang harus dilapori kalau ada masalah?",
+        "target_docs": [
+          "SOP-07",
+          "SOP-10",
+          "SOP-11",
+          "KEB-03",
+          "KEB-04",
+          "MAN-01",
+          "SOP-05"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 2,
+          "top_doc": "SOP-11",
+          "targets_in_top5": 2,
+          "cuplikan": "Korban cedera tidak dipindahkan kecuali lokasinya berbahaya; petugas pertolongan pertama menstabilkan korban sampai bantuan medis datang. Tamu dan kontraktor di"
+        },
+        "cos_top1": 0.37797629833221436,
+        "cos_top2_dokumen_lain": 0.3771524429321289,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-11",
+          "KEB-03",
+          "SOP-03",
+          "KEB-02",
+          "SOP-06"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 2,
+          "cuplikan": "Pelapor tidak boleh dihukum karena melaporkan. Investigasi dan Sanksi. Tim K3 menyelidiki akar masalah dalam 3 hari kerja dan menetapkan tindakan perbaikan."
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 2,
+          "cuplikan": "Sebagai contoh, operator hampir tertabrak forklift di persimpangan lorong. Meski tidak ada yang cedera, kejadian ini wajib dilaporkan sebagai kejadian nyaris ce"
+        },
+        "kemiripan_leksikal": 0.6666666666666666
+      },
+      {
+        "id": "AMB-06",
+        "tipe": "ambigu",
+        "kueri": "Kapan barang dimusnahkan?",
+        "target_docs": [
+          "SOP-06",
+          "SOP-05",
+          "SOP-09"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-06",
+          "targets_in_top5": 3,
+          "cuplikan": "Pemusnahan. Pemusnahan disaksikan oleh QC Inspector dan satu perwakilan keuangan. Barang tidak boleh dibawa pulang, dijual kembali, atau dibagikan kepada karyaw"
+        },
+        "cos_top1": 0.4084039330482483,
+        "cos_top2_dokumen_lain": 0.3648207187652588,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-06",
+          "SOP-07",
+          "SOP-05",
+          "SOP-02",
+          "SOP-09"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-06",
+          "targets_in_top5": 3,
+          "cuplikan": "Laporan nilai barang yang dimusnahkan dibahas setiap bulan untuk memperbaiki pemesanan pada pemasok."
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 3,
+          "cuplikan": "Grade D: tidak dapat diperbaiki, dimusnahkan. Zona Karantina. Barang bermasalah disimpan di zona karantina berpagar yang berlabel merah. Hanya QC Inspector dan "
+        },
+        "kemiripan_leksikal": 1.0
+      },
+      {
+        "id": "AMB-08",
+        "tipe": "ambigu",
+        "kueri": "Bagaimana aturan karantina?",
+        "target_docs": [
+          "SOP-09",
+          "SOP-06",
+          "SOP-07"
+        ],
+        "vector": {
+          "rank": 2,
+          "rr": 0.5,
+          "answer_rank": 4,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 2,
+          "cuplikan": "Kesehatan. Pemeriksaan kesehatan berkala dilakukan setahun sekali. Petugas ruang dingin dan operator forklift diperiksa sebelum penempatan. Karyawan dilarang be"
+        },
+        "cos_top1": 0.46420353651046753,
+        "cos_top2_dokumen_lain": 0.42780178785324097,
+        "ditolak": true,
+        "dokumen_top5": [
+          "KEB-03",
+          "SOP-09",
+          "SOP-06",
+          "SOP-11",
+          "SOP-05"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 1,
+          "cuplikan": "Grade D: tidak dapat diperbaiki, dimusnahkan. Zona Karantina. Barang bermasalah disimpan di zona karantina berpagar yang berlabel merah. Hanya QC Inspector dan "
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 3,
+          "cuplikan": "Grade D: tidak dapat diperbaiki, dimusnahkan. Zona Karantina. Barang bermasalah disimpan di zona karantina berpagar yang berlabel merah. Hanya QC Inspector dan "
+        },
+        "kemiripan_leksikal": 1.0
+      },
+      {
+        "id": "AMB-10",
+        "tipe": "ambigu",
+        "kueri": "Bagaimana kalau ada yang terlambat?",
+        "target_docs": [
+          "KEB-01",
+          "SOP-04"
+        ],
+        "vector": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 2,
+          "cuplikan": "Keterlambatan dan Ketidakhadiran. Keterlambatan lebih dari 15 menit dicatat dan dilaporkan kepada Supervisor Gudang. Ketidakhadiran tanpa keterangan selama dua "
+        },
+        "cos_top1": 0.5107491612434387,
+        "cos_top2_dokumen_lain": 0.49420028924942017,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-01",
+          "SOP-04",
+          "SOP-01",
+          "REG-01",
+          "SOP-02"
+        ],
+        "bm25": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-04",
+          "targets_in_top5": 1,
+          "cuplikan": "Sebagai contoh, kurir ekspres terlambat 40 menit sehingga paket belum dijemput. Koordinator mencatat keterlambatan di WMS sebagai bahan evaluasi mitra dan memin"
+        },
+        "hybrid": {
+          "rank": 1,
+          "rr": 1.0,
+          "answer_rank": 1,
+          "top_doc": "SOP-04",
+          "targets_in_top5": 2,
+          "cuplikan": "Sebagai contoh, kurir ekspres terlambat 40 menit sehingga paket belum dijemput. Koordinator mencatat keterlambatan di WMS sebagai bahan evaluasi mitra dan memin"
+        },
+        "kemiripan_leksikal": 0.5
+      },
+      {
+        "id": "OOD-03",
+        "tipe": "ood",
+        "kueri": "Siapa presiden pertama Indonesia?",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-05",
+          "targets_in_top5": 0,
+          "cuplikan": "Kepala Gudang bertanggung jawab atas pencapaian seluruh indikator, Supervisor Gudang atas kinerja harian, dan Admin Gudang atas keakuratan data pelaporan. Defin"
+        },
+        "cos_top1": 0.11207276582717896,
+        "cos_top2_dokumen_lain": 0.09209907054901123,
+        "ditolak": true,
+        "dokumen_top5": [
+          "KEB-05",
+          "SOP-11",
+          "SOP-01",
+          "KEB-04",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 0,
+          "cuplikan": "Pelanggaran pertama mendapat teguran lisan, pelanggaran kedua surat peringatan, dan pelanggaran berat yang mengancam jiwa dapat berujung pada pemberhentian seme"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Prosedur ini memastikan setiap barang dari pemasok diterima, diperiksa, dan dicatat secara akurat sebelum disimpan di rak. Penerimaan yang rapi mencegah selisih"
+        }
+      },
+      {
+        "id": "OOD-04",
+        "tipe": "ood",
+        "kueri": "Berapa gaji pokok direktur keuangan perusahaan?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Supervisor Gudang mencatat permintaan lembur dan memastikan kuota tidak terlampaui, bagian SDM memverifikasi data dan menghitung upah, serta Kepala Gudang menye"
+        },
+        "cos_top1": 0.4353950023651123,
+        "cos_top2_dokumen_lain": 0.39135581254959106,
+        "ditolak": true,
+        "dokumen_top5": [
+          "KEB-02",
+          "SOP-08",
+          "KEB-05",
+          "KEB-01",
+          "SOP-09"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 0,
+          "cuplikan": "Pengembalian Dana. Setelah grading, Admin Gudang mengirim hasil ke tim layanan pelanggan. Pengembalian dana diproses oleh tim keuangan paling lambat 5 hari kerj"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-08",
+          "targets_in_top5": 0,
+          "cuplikan": "Selisih di atas 2 persen atau di atas Rp5.000.000 wajib diinvestigasi sebelum penyesuaian dan dilaporkan kepada bagian keuangan."
+        }
+      },
+      {
+        "id": "OOD-07",
+        "tipe": "ood",
+        "kueri": "Rekomendasi film romantis terbaik tahun ini",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-05",
+          "targets_in_top5": 0,
+          "cuplikan": "Perbaikan Berkelanjutan. Setiap bulan tim memilih satu indikator yang paling jauh dari target untuk diperbaiki melalui siklus Plan-Do-Check-Act. Saran karyawan "
+        },
+        "cos_top1": 0.13601922988891602,
+        "cos_top2_dokumen_lain": 0.09006595611572266,
+        "ditolak": true,
+        "dokumen_top5": [
+          "KEB-05",
+          "SOP-05",
+          "SOP-07",
+          "SOP-02",
+          "SOP-04"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Jika rak penuh, operator meminta rekomendasi lokasi alternatif dan dilarang meletakkan barang di lorong. Batas Kapasitas. Rak dianggap penuh pada okupansi 95 pe"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-05",
+          "targets_in_top5": 0,
+          "cuplikan": "Pada periode promosi target tetap berlaku, tetapi laporan menandai periode tersebut agar tidak disalahartikan. Data indikator disimpan minimal tiga tahun untuk "
+        }
+      },
+      {
+        "id": "OOD-08",
+        "tipe": "ood",
+        "kueri": "Merek forklift listrik apa yang paling murah di pasaran?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 0,
+          "cuplikan": "Dilarang berdiri di belakang forklift. Jarak aman dengan forklift yang beroperasi adalah 3 meter. Insiden. Setiap tabrakan, sekecil apa pun, membuat alat dihent"
+        },
+        "cos_top1": 0.5437512993812561,
+        "cos_top2_dokumen_lain": 0.38278263807296753,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-10",
+          "SOP-07",
+          "KEB-02",
+          "KEB-05"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 0,
+          "cuplikan": "Saat parkir, garpu diturunkan sampai lantai, rem tangan diaktifkan, dan kunci dicabut. Forklift tidak boleh diparkir di depan jalur evakuasi, APAR, atau panel l"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-10",
+          "targets_in_top5": 0,
+          "cuplikan": "Saat parkir, garpu diturunkan sampai lantai, rem tangan diaktifkan, dan kunci dicabut. Forklift tidak boleh diparkir di depan jalur evakuasi, APAR, atau panel l"
+        }
+      },
+      {
+        "id": "OOD-11",
+        "tipe": "ood",
+        "kueri": "Bagaimana cara menanam cabai di dalam pot?",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-03",
+          "targets_in_top5": 0,
+          "cuplikan": "Pengemasan. Gunakan kardus dengan ukuran terkecil yang muat. Barang pecah belah dilapisi bubble wrap dua lapis dan diberi stiker FRAGILE. Barang cair dimasukkan"
+        },
+        "cos_top1": 0.24298882484436035,
+        "cos_top2_dokumen_lain": 0.23280608654022217,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-03",
+          "SOP-01",
+          "SOP-02",
+          "SOP-05",
+          "MAN-01"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 0,
+          "cuplikan": "Barang disimpan pada rak R13 dan R14, kecuali elektronik bernilai tinggi yang mengikuti rak elektroniknya. Penyimpanan dibatasi tiga tumpukan dan tidak boleh di"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 0,
+          "cuplikan": "Cara Memindahkan Barang Fragile. Gunakan troli beralas busa. Jangan memakai forklift untuk satu koli kaca tanpa palet. Barang kaca dibawa dalam posisi tegak men"
+        }
+      },
+      {
+        "id": "OOD-12",
+        "tipe": "ood",
+        "kueri": "Bagaimana mengurus izin usaha untuk menjadi pemasok baru?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "REG-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Lisensi operator dituangkan dalam SOP Forklift. Aturan penugasan juga menjadi batasan pada solver penjadwalan otomatis. Pemeliharaan Dokumen. Bagian SDM meninja"
+        },
+        "cos_top1": 0.5691365003585815,
+        "cos_top2_dokumen_lain": 0.5071654319763184,
+        "ditolak": false,
+        "dokumen_top5": [
+          "REG-01",
+          "SOP-09",
+          "KEB-05",
+          "SOP-08",
+          "SOP-01"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Izin Sakit. Karyawan sakit memberi tahu Supervisor sebelum shift. Sakit lebih dari satu hari wajib disertai surat dokter yang diunggah dalam 3 hari. Izin sakit "
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-05",
+          "targets_in_top5": 0,
+          "cuplikan": "Evaluasi Pemasok. Pemasok dinilai per kuartal menurut ketepatan kedatangan, kesesuaian jumlah, dan mutu barang. Pemasok bernilai di bawah 70 mendapat peringatan"
+        }
+      },
+      {
+        "id": "OOD-15",
+        "tipe": "ood",
+        "kueri": "Tips menurunkan berat badan dengan cepat",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Barang berat lebih dari 20 kg disimpan pada level rak paling bawah. Barang yang tidak boleh berdampingan, seperti pangan dan deterjen, wajib dipisah minimal sat"
+        },
+        "cos_top1": 0.34155869483947754,
+        "cos_top2_dokumen_lain": 0.33056724071502686,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-02",
+          "SOP-07",
+          "MAN-01",
+          "SOP-03",
+          "KEB-02"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Sebagai contoh, smartphone termasuk fragile tetapi perputarannya cepat, sehingga diletakkan pada R09 dengan pelindung tambahan agar dekat dengan jalur kirim. Ku"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "MAN-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Layar perangkat dibersihkan tanpa cairan berlebih, dan perangkat tidak boleh dibawa ke ruang beku lebih dari 30 menit karena baterainya cepat turun."
+        }
+      },
+      {
+        "id": "OOD-16",
+        "tipe": "ood",
+        "kueri": "Bagaimana prosedur ekspor barang melalui bea cukai?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Prosedur ini memastikan setiap barang dari pemasok diterima, diperiksa, dan dicatat secara akurat sebelum disimpan di rak. Penerimaan yang rapi mencegah selisih"
+        },
+        "cos_top1": 0.5796759724617004,
+        "cos_top2_dokumen_lain": 0.5216884613037109,
+        "ditolak": false,
+        "dokumen_top5": [
+          "SOP-01",
+          "SOP-04",
+          "SOP-09",
+          "SOP-03"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Penjadwalan Kedatangan. Pemasok wajib memesan slot bongkar melalui Admin Gudang paling lambat 24 jam sebelum kedatangan. Slot bongkar tersedia pukul 07.00 sampa"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Produk pangan dengan sisa masa simpan kurang dari 30 persen ditolak kecuali disetujui Kepala Gudang."
+        }
+      },
+      {
+        "id": "OOD-19",
+        "tipe": "ood",
+        "kueri": "How do I bake sourdough bread at home?",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 0,
+          "cuplikan": "Yogurt yang tiba dalam kondisi hangat dilaporkan pelanggan 10 jam setelah diterima; pengembalian dana disetujui tanpa barang dikirim kembali, karena pangan yang"
+        },
+        "cos_top1": 0.30816441774368286,
+        "cos_top2_dokumen_lain": 0.28869712352752686,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-09",
+          "SOP-05",
+          "MAN-01",
+          "SOP-03",
+          "SOP-01"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": null,
+          "targets_in_top5": 0,
+          "cuplikan": ""
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-09",
+          "targets_in_top5": 0,
+          "cuplikan": "Yogurt yang tiba dalam kondisi hangat dilaporkan pelanggan 10 jam setelah diterima; pengembalian dana disetujui tanpa barang dikirim kembali, karena pangan yang"
+        }
+      },
+      {
+        "id": "OOD-20",
+        "tipe": "ood",
+        "kueri": "Berapa tunjangan hari raya yang diterima karyawan?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Bila ia lembur dua jam pada hari kerja, upahnya Rp30.000 untuk jam pertama dan Rp40.000 untuk jam kedua, sehingga totalnya Rp70.000. Contoh lain, karyawan yang "
+        },
+        "cos_top1": 0.6667259931564331,
+        "cos_top2_dokumen_lain": 0.5264124870300293,
+        "ditolak": false,
+        "dokumen_top5": [
+          "KEB-02",
+          "KEB-01",
+          "REG-01"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-01",
+          "targets_in_top5": 0,
+          "cuplikan": "Waktu Istirahat. Karyawan mendapat istirahat minimal 30 menit setelah bekerja selama 4 jam terus-menerus. Waktu istirahat tidak termasuk jam kerja. Istirahat di"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Lembur paling lama 4 jam dalam satu hari dan 18 jam dalam satu minggu. Karyawan yang menolak lembur tidak boleh dikenai sanksi. Upah Lembur."
+        }
+      },
+      {
+        "id": "OOD-23",
+        "tipe": "ood",
+        "kueri": "Apa warna terbaik untuk mengecat ruang tamu kecil?",
+        "target_docs": [],
+        "ood_jenis": "jauh",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-07",
+          "targets_in_top5": 0,
+          "cuplikan": "Palet kayu yang retak diganti sebelum dipakai, dan barang tidak boleh melewati tepi palet lebih dari 5 cm karena mudah terbentur saat melintasi lorong."
+        },
+        "cos_top1": 0.2954704165458679,
+        "cos_top2_dokumen_lain": 0.231753408908844,
+        "ditolak": true,
+        "dokumen_top5": [
+          "SOP-07",
+          "SOP-02",
+          "MAN-01",
+          "SOP-03",
+          "SOP-04"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-04",
+          "targets_in_top5": 0,
+          "cuplikan": "Ruang server dan ruang barang bernilai tinggi hanya dapat dibuka oleh personel yang berwenang. Kartu yang hilang dilaporkan dalam 1 jam untuk dinonaktifkan. Pem"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-03",
+          "targets_in_top5": 0,
+          "cuplikan": "Kebersihan dan Lorong. Prinsip 5R diterapkan setiap akhir shift. Lorong harus bebas barang, dan tumpahan segera dibersihkan. Jalur pejalan kaki ditandai warna h"
+        }
+      },
+      {
+        "id": "OOD-24",
+        "tipe": "ood",
+        "kueri": "Bagaimana merancang iklan untuk promo akhir tahun?",
+        "target_docs": [],
+        "ood_jenis": "dekat",
+        "vector": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "KEB-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Saat periode promosi, Kepala Gudang menyusun rencana lembur paling lambat dua minggu sebelumnya."
+        },
+        "cos_top1": 0.43507659435272217,
+        "cos_top2_dokumen_lain": 0.43268275260925293,
+        "ditolak": true,
+        "dokumen_top5": [
+          "KEB-02",
+          "SOP-02",
+          "SOP-03",
+          "KEB-05",
+          "SOP-04"
+        ],
+        "bm25": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Menjelang periode promosi, Kepala Gudang dapat memerintahkan relokasi sementara: SKU promo dipindahkan ke R09 atau R10 maksimal tujuh hari sebelum promo dan dik"
+        },
+        "hybrid": {
+          "rank": 0,
+          "rr": 0.0,
+          "answer_rank": 0,
+          "top_doc": "SOP-02",
+          "targets_in_top5": 0,
+          "cuplikan": "Menjelang periode promosi, Kepala Gudang dapat memerintahkan relokasi sementara: SKU promo dipindahkan ke R09 atau R10 maksimal tujuh hari sebelum promo dan dik"
+        }
+      }
+    ]
+  },
+  "uji_filter_metadata": [
+    {
+      "kueri": "Bagaimana aturan suhu?",
+      "filter": {
+        "kategori": "Rantai Dingin"
+      },
+      "mode": "vector",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "SOP-05"
+      ]
+    },
+    {
+      "kueri": "Bagaimana aturan suhu?",
+      "filter": {
+        "kategori": "Rantai Dingin"
+      },
+      "mode": "hybrid",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "SOP-05"
+      ]
+    },
+    {
+      "kueri": "Berapa batas jam kerja?",
+      "filter": {
+        "jenis": "Regulasi"
+      },
+      "mode": "vector",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "REG-01"
+      ]
+    },
+    {
+      "kueri": "Berapa batas jam kerja?",
+      "filter": {
+        "jenis": "Regulasi"
+      },
+      "mode": "hybrid",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "REG-01"
+      ]
+    },
+    {
+      "kueri": "Aturan keselamatan apa saja?",
+      "filter": {
+        "$and": [
+          {
+            "level_akses": "publik"
+          },
+          {
+            "tahun_berlaku": {
+              "$gte": 2026
+            }
+          }
+        ]
+      },
+      "mode": "vector",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "KEB-03"
+      ]
+    },
+    {
+      "kueri": "Aturan keselamatan apa saja?",
+      "filter": {
+        "$and": [
+          {
+            "level_akses": "publik"
+          },
+          {
+            "tahun_berlaku": {
+              "$gte": 2026
+            }
+          }
+        ]
+      },
+      "mode": "hybrid",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "KEB-03"
+      ]
+    },
+    {
+      "kueri": "Di mana barang ditaruh?",
+      "filter": {
+        "format_sumber": {
+          "$in": [
+            "md",
+            "pdf"
+          ]
+        }
+      },
+      "mode": "vector",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "SOP-02"
+      ]
+    },
+    {
+      "kueri": "Di mana barang ditaruh?",
+      "filter": {
+        "format_sumber": {
+          "$in": [
+            "md",
+            "pdf"
+          ]
+        }
+      },
+      "mode": "hybrid",
+      "jumlah_hasil": 5,
+      "semua_sesuai_filter": true,
+      "dokumen": [
+        "SOP-02",
+        "SOP-07"
+      ]
+    }
+  ],
+  "hnsw_vs_eksak": {
+    "recall_at_5": 1.0,
+    "selisih_cos_maks": 3.5762786865234375e-07
+  },
+  "uji_persistensi": {
+    "jumlah_vektor_proses_baru": 245,
+    "kueri_diuji": 33,
+    "kueri_hasil_identik": 33,
+    "pid_proses_baru": 26156
+  },
+  "pid_proses_utama": 9732
+}
